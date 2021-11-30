@@ -19,7 +19,25 @@ body {
     min-height: 100vh;
     font-family: 'Manrope', sans-serif;
 }
+::-webkit-scrollbar {
+   width: 0.4rem;
+  
 
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5e6062;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 header{
     position: sticky;
     position: -webkit-sticky;
@@ -78,6 +96,7 @@ nav {
     display: none;
 }
 
+
 li>a:hover{
     color:var(--roze);
 }
@@ -89,6 +108,7 @@ li>a:hover{
 .aNav:hover::before {
     padding-right: 10px;
 }
+
 
 @media screen and (max-width:1182px) {
     nav{

@@ -14,7 +14,17 @@ main {
     /* background-size: contain; */
 
 }
+.uvod{
+    height: 70vh;
 
+    margin: auto;
+    width: 50%;
+    max-width: 1200px;
+    min-width: 250px;
+  
+ 
+    overflow-y: scroll;   
+}
 
 .uvod>h1 {
     font-size: 4.4rem;
@@ -36,3 +46,35 @@ main {
     padding: 20px 25%;
 }
 
+.bushidoSekcija{
+    margin-top: 20px;
+}
+.bushidoVrednosti{
+    list-style-type: decimal !important;
+    list-style-position: inside;
+
+}
+
+.bushido{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr)); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:80px;
+    flex-wrap: wrap;
+
+}
+.bushido>div>dt{
+    font-size: 2em;
+  }
+.bushido>div>dd{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.bushido>div:nth-child(even){
+
+
+}
