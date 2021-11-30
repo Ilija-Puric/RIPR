@@ -1,0 +1,38 @@
+
+main {
+    margin-top: 100px;
+    text-align: center;
+    background-image: url( "Slike main/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+    color: white;
+
+   /* background-size: cover;
+   min-height: 100vh; */
+    /* background-size: contain; */
+
+}
+
+
+.uvod>h1 {
+    font-size: 4.4rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-decoration: 2px solid underline;
+}
+
+#bitno {
+    font-size: 3.4rem;
+    font-weight: 500;
+}
+
+.paragrafMain {
+   
+    font-size: 1.5rem;
+    font-weight: 300;
+    /*pripazi na ovo*/
+    padding: 20px 25%;
+}
+
