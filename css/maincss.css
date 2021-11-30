@@ -1,41 +1,116 @@
 main {
-
     margin-top: 100px;
     text-align: center;
-    /*CSS i Slike u razlicitim datotekama*/
-    background-image: url(../slike/background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-
-    background-size: contain;
-    color: white;
-
 }
-.uvod{
-    height: 70vh;
 
-    margin: auto;
+.uvod {
+    text-align: left;
+    line-height: 2.6rem;
+    /* border: 2px solid yellow; */
+}
+
+.uvod>h1 {
+    line-height: 3.2rem;
+}
+
+#mainPic {
+    float: left;
     width: 50%;
-    max-width: 1200px;
-    min-width: 250px;
-  
- 
-    /*Razmislicu*/
-    /* overflow-y: scroll;    */
+    margin-left: 10%;
+    margin-right: 20px;
+    /* min-height: 50vh; */
+
+    min-height: 50vh;
+
 }
 
 .uvod>h1 {
     font-size: 5rem;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     text-decoration: 2px solid underline;
 }
 
 .paragrafMain {
-   
+
     font-size: 1.5rem;
     font-weight: 300;
     /*pripazi na ovo*/
-    padding: 20px 25%;
+    padding-right: 5%;
 }
 
+.promocija {
+    text-align: left;
+}
+
+.nalog {
+    margin-top: 10px;
+}
+
+button:hover {
+    color: var(--crna);
+    border-color: var(--crna);
+}
+
+#loginLink {
+    color: var(--bela);
+    text-decoration: underline;
+}
+
+#loginLink:hover {
+    color: var(--crna);
+}
+
+@media screen and (max-width:1834px) {
+
+    #prijavaDiv {
+        clear: both;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #prijavabt {
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1413px) {
+
+    main {
+        margin-top: 0;
+    }
+    .uvod {
+        clear: left;
+    }
+    .uvod>h1 {
+        text-align: center;
+        line-height:4.4rem;
+        margin-bottom: 30px;
+    }
+
+
+    .paragrafMain {
+        padding-left: 45px;
+    }
+
+    #bitno {
+        display: block;
+        text-align: center;
+    }
+    #mainPic {
+
+        float: none;
+        /*    
+        width: 50%;
+        margin-left: 10%;
+        margin-right: 20px;
+        /* min-height: 50vh; */
+
+        width:80% ;
+        min-height: 100%;
+        
+    }
+}

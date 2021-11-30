@@ -12,6 +12,15 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
 
 body {
     /* background-color: var(--bela); */
@@ -36,6 +45,12 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+a{
+    text-decoration: none;
+    color: var(--crna);
+}
+
 header{
     position: sticky;
     position: -webkit-sticky;
@@ -48,7 +63,6 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
     background-color: var(--bela); 
 }
 
@@ -129,5 +143,21 @@ button{
     }
     .preHamburger{
         display: none;
+    } 
+
+}
+
+/*JS hamburger resenje za vece displeje*/
+/* @media screen and (min-width:1182px) {
+
+    nav{
+        flex-direction: row !important;
     }
+    .listeFlex{
+        flex-direction: row !important;
     }
+    .preHamburger{
+        display: block !important;
+    } 
+
+} */
