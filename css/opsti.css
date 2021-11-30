@@ -21,8 +21,6 @@ body {
 }
 ::-webkit-scrollbar {
    width: 0.4rem;
-  
-
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -46,7 +44,6 @@ header{
     top: 0;
 }
 nav {
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -96,7 +93,6 @@ nav {
     display: none;
 }
 
-
 li>a:hover{
     color:var(--roze);
 }
@@ -109,6 +105,14 @@ li>a:hover{
     padding-right: 10px;
 }
 
+button{
+    border:3px solid var(--bela);
+    background-color: transparent;
+    border-radius: 25px;
+    color: var(--bela);
+    padding: 5px 25px;
+    font-size: 1.7rem;
+}
 
 @media screen and (max-width:1182px) {
     nav{
