@@ -1,96 +1,71 @@
-// const hamburger = document.querySelector(".hamburgerIkona");
-// const listaNav = document.querySelectorAll(".preHamburger");
-// var kliknuto = false;
 
-// console.log("Begin " + kliknuto);
-// if (kliknuto == false)
-//     hamburger.addEventListener("click", e => {
-//         if (!kliknuto) {
-//             console.log("unutra 1 pre " + kliknuto);
-
-//             const nav = document.getElementById("navBar");
-//             nav.style.flexDirection = "column ";
+const hamburger = document.querySelector(".hamburgerCeo");
+const liste = document.querySelector(".wrapper");
+const hamLinije = document.querySelectorAll(".linija");
 
 
-//             const ulList = document.querySelector(".listeFlex");
-//             ulList.style.flexDirection = "column";
-//             ulList.style.gap = "20px";
+hamburger.addEventListener("click", e => {
 
-//             const listItems = document.getElementsByClassName("preHamburger");
-//             for (var i = 0; i < listItems.length; i++) {
-//                 listItems[i].style.display = "block";
-//             }
+    /*Popravlja ne registrovanje na prvi klik*/
+    //Ne treba mi ipak
+    // if (liste.style.display == "") {
+    //     liste.style.display = "block";
+    // }
 
-//             hamburger.style.paddingLeft = "50px";
+    if (liste.style.display == "none") {
+        liste.style.display = "block";
+        /*Aktiv*/
+        
+        for (var i = 0; i < hamLinije.length; i++) {
 
-//             kliknuto = true;
-//             console.log("unutra 1 " + kliknuto);
-//             if (kliknuto == true)
-//                 hamburger.addEventListener("click", e => {
-//                     if (kliknuto) {
+            // hamLinije[i].style.webkitTransform = 'rotate(' + 360 + 'deg)';
 
-//                         for (var i = 0; i < listItems.length; i++) {
-//                             listItems[i].style.display = "none";
-//                         }
+            if (i == 1) {
+                hamLinije[i].style.width = "45px";
+            }
+        }
+            hamLinije[0].style.transition = "all 0.3s ease-out";
+            hamLinije[1].style.transition = "all 0.4s ease-out";
+            hamLinije[2].style.transition = "all 0.3s ease-out";
+        
+    }
+    else {
+      
+        for (var i = 0; i < hamLinije.length; i++) {
+            // hamLinije[i].style.webkitTransform = 'rotate(' + 0 + 'deg)';
 
-//                         nav.style.flexDirection = "row";
+            hamLinije[i].style.width = "35px";
+        }
 
-//                         console.log("unutra 2 "+ kliknuto);
-//                         kliknuto = false;
-//                         console.log("unutra 2 end "+ kliknuto);
-//                         console.log("----");
-//                     }
-//                 });
-//         }
-//     });
+        hamLinije[0].style.transition = "all 0.2s ease-out";
+        hamLinije[1].style.transition = "all 0.2s ease-out";
+        hamLinije[2].style.transition = "all 0.2s ease-out";
+        liste.style.display = "none";
+    }
+});
 
+function proveriEkran(x) {
+    if (x.matches) { // If media query matches
+        liste.style.display = "block";
 
+        for (var i = 0; i < hamLinije.length; i++) {
+            hamLinije[i].style.display = "none";
+        }
+    }
+    else {
+        liste.style.display = "none";
+        for (var i = 0; i < hamLinije.length; i++) {
+            hamLinije[i].style.display = "block";
 
+            /*U slucaju povlacenja dok je selektovana lista sto 
+            dovodi do promene ekrana i loseg aktiv stanja buttona*/
+            hamLinije[i].style.width = "30px";
+        }
+    }
+}
 
+var x = window.matchMedia("(min-width: 1182px)")
+proveriEkran(x) // Call listener function at run time
+x.addListener(proveriEkran) // Attach listener function on state changes
 
-
-// const hamburger = document.querySelector(".hamburgerIkona");
-// const listaNav = document.querySelector("#data");
-
-
-// function myFunction(x) {
-//     if (x.matches) { // If media query matches
-//         document.body.style.backgroundColor = "yellow";
-//         listaNav.style.display = "none";
-//     }
-//     else {
-//         listaNav.style.display = "flex";
-//     }
-// }
-
-// var x = window.matchMedia("(max-width: 1182px)")
-// myFunction(x) // Call listener function at run time
-// x.addListener(myFunction) // Attach listener function on state changes
-
-
-// hamburger.addEventListener("click", e => {
-//     if (listaNav.style.display == "none") {
-
-//         const nav = document.getElementById("navBar");
-//         nav.style.flexDirection = "column ";
-
-//         listaNav.style.display = "flex";
-//         listaNav.style.flexDirection = "column ";
-//         listaNav.style.gap = "40px ";
-
-//         for (let i = 0; i < listaNav.children.length; i++) {
-//             listaNav.children[i].style.display = "block";
-//             console.log(listaNav.children[i].style.display);
-//         }
-
-
-//         hamburger.style.paddingLeft = "50px";
-//         hamburger.style.paddingTop = "20px";
-//     }
-//     else {
-//         listaNav.style.display = "none";
-   
-                       
-//         }
-//     });
 
