@@ -32,7 +32,7 @@
 //                         for (var i = 0; i < listItems.length; i++) {
 //                             listItems[i].style.display = "none";
 //                         }
-                       
+
 //                         nav.style.flexDirection = "row";
 
 //                         console.log("unutra 2 "+ kliknuto);
@@ -48,4 +48,49 @@
 
 
 
+
+// const hamburger = document.querySelector(".hamburgerIkona");
+// const listaNav = document.querySelector("#data");
+
+
+// function myFunction(x) {
+//     if (x.matches) { // If media query matches
+//         document.body.style.backgroundColor = "yellow";
+//         listaNav.style.display = "none";
+//     }
+//     else {
+//         listaNav.style.display = "flex";
+//     }
+// }
+
+// var x = window.matchMedia("(max-width: 1182px)")
+// myFunction(x) // Call listener function at run time
+// x.addListener(myFunction) // Attach listener function on state changes
+
+
+// hamburger.addEventListener("click", e => {
+//     if (listaNav.style.display == "none") {
+
+//         const nav = document.getElementById("navBar");
+//         nav.style.flexDirection = "column ";
+
+//         listaNav.style.display = "flex";
+//         listaNav.style.flexDirection = "column ";
+//         listaNav.style.gap = "40px ";
+
+//         for (let i = 0; i < listaNav.children.length; i++) {
+//             listaNav.children[i].style.display = "block";
+//             console.log(listaNav.children[i].style.display);
+//         }
+
+
+//         hamburger.style.paddingLeft = "50px";
+//         hamburger.style.paddingTop = "20px";
+//     }
+//     else {
+//         listaNav.style.display = "none";
+   
+                       
+//         }
+//     });
 
