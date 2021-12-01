@@ -12,15 +12,22 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
+
 .noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
-  }
+}
 
 body {
     /* background-color: var(--bela); */
@@ -28,43 +35,47 @@ body {
     min-height: 100vh;
     font-family: 'Manrope', sans-serif;
 }
+
 ::-webkit-scrollbar {
-   width: 0.4rem;
+    width: 0.4rem;
+    height: 0.4rem;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #5e6062;
+    background: #5e6062;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+    background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--crna);
 }
 
-header{
+header {
     position: sticky;
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
     top: 0;
 }
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--bela); 
-    
+    background-color: var(--bela);
+
 }
 
 #logo {
@@ -72,12 +83,13 @@ nav {
     border-radius: 50px;
 }
 
-#data{
+#dataNav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:80px;
+    gap: 80px;
 }
+
 /*Selektor potomaka*/
 li {
     list-style-type: none;
@@ -88,15 +100,15 @@ li {
     text-decoration: none;
     font-size: 1.24em;
     font-weight: 500;
-    
     transition-property: color;
     transition-duration: 0.4s;
     transition-timing-function: ease-in-out;
 }
 
-li>a:hover{
-    color:var(--roze);
+li>a:hover {
+    color: var(--roze);
 }
+
 .aNav::before {
     content: ">";
     transition: padding-right 0.4s ease-in-out;
@@ -106,13 +118,9 @@ li>a:hover{
     padding-right: 10px;
 }
 
-button{
-    border:3px solid var(--bela);
-    background-color: transparent;
-    border-radius: 25px;
-    color: var(--bela);
-    padding: 5px 25px;
-    font-size: 1.7rem;
+
+.helper{
+    display: none;
 }
 
 .dropdown {
@@ -125,14 +133,14 @@ button{
     position: absolute;
     min-width: 160px;
     background-color: var(--bela);
-    color:var(--crna);
+    color: var(--crna);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
     text-align: justify;
 }
 
-.dropdown-content :hover{
+.dropdown-content :hover {
     text-decoration: underline;
     padding-left: 5%;
 }
@@ -141,39 +149,42 @@ button{
     display: block;
 }
 
-
-@media screen and (max-width:1182px) {
-    nav{
-        justify-content: space-between;
-        padding: 0 45px;
-    }
-    .hamburgerIkona{
-        display: block;
-    }
-    .linija{
-        display: block;
-        width: 35px;
-        border-top:3px solid var(--roze);
-        padding: 5px;
-        margin-right: 15px;
-    }
-    .preHamburger{
-        display: none;
-    } 
-
+button {
+    border: 3px solid var(--bela);
+    background-color: transparent;
+    border-radius: 25px;
+    color: var(--bela);
+    padding: 5px 25px;
+    font-size: 1.7rem;
 }
 
-/*JS hamburger resenje za vece displeje*/
-/* @media screen and (min-width:1182px) {
+@media screen and (max-width:1182px) {
+    nav {
+        flex-direction: column;
 
-    nav{
-        flex-direction: row !important;
     }
-    .listeFlex{
-        flex-direction: row !important;
+    .listeFlex {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
-    .preHamburger{
-        display: block !important;
-    } 
-
-} */
+    #dataNav {
+        /* padding: 10px 10% 10px 10%; */
+        gap: 50px;
+        width: 100%;
+        overflow-y: visible;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        /* ne raspada se nav scroll*/
+        white-space: nowrap;
+        text-align: center;
+    }
+    .aNav {
+        display: inline-block;
+        color: var(--crna);
+        text-align: center;
+        text-decoration: none;
+      
+        
+    }
+}
