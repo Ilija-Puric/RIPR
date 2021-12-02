@@ -1,0 +1,50 @@
+div, p, ol, ul, li, a, em, 
+strong, address, span, br, img
+
+div,p,ul,li,a,em,strong,br,img+
+ol,adress,spann-
+
+header, footer, nav, aside, figure, figcaption
+
+header,footer,nav,aside+
+figure,figcaption-
+
+float+
+clear-
+
+min-width,max-width+
+
+table,captin,th,tr,td-
+border, border-collapse,
+padding, text-align, border-spacing,
+text-align,border-spaing  NOPE
+
+CSS inline,embedded,external+
+CSS sleektori:selektore tipa elementa, selektore 
+potomaka, selektore dece,
+ID selektore i selektore klasa, kao i grupisanih 
+selektora +
+
+
+selektore najbliže braće - 
+
+a:link,hover,visited,active+
+
+slika kao linkova+
+
+ email linkova, kao i 
+otvaranje linkova u novom prozoru -
+
+em-
+%, px, vw, 
+vh) +
+
+em, %, px, vw, 
+vh).
+
+font-family, fontsize,
+ fontweight, color, line-height, text-align, 
+text-decoration +
+
+font-style, font-variant, text-indent, textshadow, 
+text-transform-

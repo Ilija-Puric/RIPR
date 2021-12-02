@@ -103,7 +103,7 @@ function mobile() {
 
 function tablet() {
   const mql = window.matchMedia(
-    "screen and (min-width: 600px) and (max-width: 1182px)"
+    "screen and (min-width: 600px) and (max-width: 1245px)"
   );
   checkMedia(mql);
   mql.addListener(checkMedia);
@@ -121,7 +121,7 @@ function tablet() {
   }
 }
 function desktop() {
-  const mql = window.matchMedia("screen and (min-width: 1182px)");
+  const mql = window.matchMedia("screen and (min-width: 1245px)");
   checkMedia(mql);
   mql.addListener(checkMedia);
   function checkMedia(mql) {

@@ -1,116 +1,156 @@
 main {
-    margin-top: 100px;
-    text-align: center;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "left right"
+    "bottom bottom";
+  gap: 20px;
+}
+
+#gridTop {
+  grid-area: top;
+  justify-self: center;
+}
+
+#gridLeft {
+  grid-area: left;
+}
+#gridLeft > img {
+  float: right;
+  width: 50vw;
+  min-width: 682px;
+
+  margin: 0;
+  margin-right: 20px;
+}
+
+#gridRight {
+  grid-area: right;
+}
+
+main > div > h1 {
+  font-size: 3.8rem;
+  font-weight: normal;
 }
 
 .uvod {
-    text-align: left;
-    line-height: 2.6rem;
-    /* border: 2px solid yellow; */
+  text-align: left;
+  line-height: 2.6rem;
+  /* border: 2px solid yellow; */
 }
 
-.uvod>h1 {
-    line-height: 3.2rem;
+.uvod > h1 {
+  line-height: 3.2rem;
 }
 
-#mainPic {
-    float: left;
-    width: 50%;
-    margin-left: 10%;
-    margin-right: 20px;
-    /* min-height: 50vh; */
-
-    min-height: 50vh;
-
-}
-
-.uvod>h1 {
-    font-size: 5rem;
-    font-weight: normal;
-    margin-bottom: 70px;
-    text-decoration: 2px solid underline;
+#uvodH1 {
+  font-size: 3.7rem;
+  font-weight: normal;
+  margin-bottom: 50px;
+  text-decoration: 2px solid underline;
 }
 
 .paragrafMain {
-
-    font-size: 1.5rem;
-    font-weight: 300;
-    /*pripazi na ovo*/
-    padding-right: 5%;
+  font-size: 1.5rem;
+  font-weight: 300;
+  /*pripazi na ovo*/
+  /* padding-right: 5%; */
 }
 
 .promocija {
-    text-align: left;
+  text-align: left;
 }
 
 .nalog {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 button:hover {
-    color: var(--crna);
-    border-color: var(--crna);
+  color: var(--crna);
+  border-color: var(--crna);
 }
 
 #loginLink {
-    color: var(--bela);
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+#loginLink:link {
+  color: var(--bela);
+}
+
+#loginLink:visited {
+  color: var(--ljubicasta);
 }
 
 #loginLink:hover {
-    color: var(--crna);
+  color: var(--crna);
 }
 
-@media screen and (max-width:1834px) {
-
-    #prijavaDiv {
-        clear: both;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #prijavabt {
-        width: fit-content;
-        margin: auto;
-    }
+#loginLink:active {
+  color: var(--crvena);
 }
 
-@media screen and (max-width:1413px) {
+@media screen and (max-width: 1484px) {
+  main {
+    grid-template-areas:
+      "top top"
+      "center center"
+      "bottom bottom";
+    gap: 20px;
+  }
 
-    main {
-        margin-top: 0;
-    }
-    .uvod {
-        clear: left;
-    }
-    .uvod>h1 {
-        text-align: center;
-        line-height:4.4rem;
-        margin-bottom: 30px;
-    }
+  #gridTop {
+    grid-area: top;
+    justify-self: center;
+  }
 
+  #gridLeft {
+    grid-area: center;
+    display: flex;
+    justify-content: center;
+  }
+  #gridLeft > img {
+    /* padding-right: 10%; */
+    padding-left: 20px;
+    width: 70%;
+    min-width: 300px;
+    float: none;
+  }
+  #gridRight {
+    grid-area: bottom;
+    text-align: center;
+  }
 
-    .paragrafMain {
-        padding-left: 45px;
-    }
+  .nalog {
+    margin-top: 5px;
+    margin-bottom: 45px;
+  }
+}
 
-    #bitno {
-        display: block;
-        text-align: center;
-    }
-    #mainPic {
+@media screen and (max-width: 500px) {
+  main > div > h1 {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+  #gridLeft > img {
+    min-width: 250px;
+  }
 
-        float: none;
-        /*    
-        width: 50%;
-        margin-left: 10%;
-        margin-right: 20px;
-        /* min-height: 50vh; */
+  .uvod {
+    text-align: left;
+    line-height: 2.4rem;
+  }
 
-        width:80% ;
-        min-height: 100%;
-        
-    }
+  #uvodH1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  .paragrafMain {
+    font-size: 1.3rem;
+    padding: 0 3%;
+  }
+  footer > p > small {
+    font-size: 0.7rem;
+  }
 }

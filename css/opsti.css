@@ -171,7 +171,7 @@ button {
   font-size: 1.7rem;
 }
 
-@media screen and (max-width: 1182px) {
+@media screen and (max-width: 1245px) {
   .hamburgerCeo {
     display: block;
   }
@@ -210,7 +210,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1182px) and (min-width: 600px) {
+@media screen and (max-width: 1245px) and (min-width: 600px) {
   nav {
     justify-content: space-between;
   }

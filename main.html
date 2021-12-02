@@ -20,6 +20,19 @@
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+      body {
+        position: relative;
+      }
+      footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background-color: var(--bela);
+        text-align: center;
+      }
+      footer > p > small {
+        font-size: 0.9rem;
+      }
     </style>
   </head>
 
@@ -62,16 +75,19 @@
     </header>
 
     <main>
-      <aside>
+      <div id="gridTop">
+        <h1>Dobrodošli!</h1>
+        <p style="font-size: 1.4em; color: #272626"><em>Osu!</em></p>
+      </div>
+      <aside id="gridLeft">
         <img id="mainPic" src="slike/background.png" alt="slika aside" />
       </aside>
-      <section class="uvod">
-        <h1>Uvodna reč</h1>
+      <section id="gridRight" class="uvod">
+        <h1 id="uvodH1">Uvodna reč</h1>
         <p class="paragrafMain">
-          Dobrodošli! Ovaj sajt je namenjen za sve ljubitelje borilačkih
-          sportova i veština. Nudimo Vam informacije o svim borilačkim
-          sportovima/veštinama, informacije sa sportskih događaja, forum za
-          diskusiju i razmenu mišljenja i mnogo drugih stvari...
+          Ovaj sajt je namenjen za sve ljubitelje borilačkih sportova i veština.
+          Nudimo Vam informacije o svim dešavanjima u svetu sporta kao i forume
+          za razmenu mišlenja i mnogo drugih stvari.
         </p>
         <strong style="font-size: 2.8em; line-height: 2em" id="bitno"
           >Bitno!</strong
@@ -105,11 +121,14 @@
       </section>
     </main>
 
-    <!-- <div style="position: relative; border: 2px solid orange;">
-        <footer style="position: absolute; bottom: 0px; width: 100%;">
-            <p>&copy; Ilija Purić, projekat iz predmeta <q>Razvoj internet poslovnih rešenja</q> 2021.godina </p>
-        </footer>
-    </div> -->
+    <footer>
+      <p>
+        <small>
+          &copy; Ilija Purić, projekat iz predmeta
+          <q>Razvoj internet poslovnih rešenja</q> 2021.godina</small
+        >
+      </p>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>
