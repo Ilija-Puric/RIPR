@@ -8,18 +8,17 @@
     <title>Borilački kutak</title>
     <meta name="author" content="Ilija Puric">
     <meta name="keywords" content="Martial arts,MMA,Muay Thai, Judo, Kikboks, Savate, Karate,">
-    <meta  name="description" content="Ovaj sajt je namenjen za sve ljubitelje borilačkih sportova, za one koje zanima
+    <meta name="description"
+        content="Ovaj sajt je namenjen za sve ljubitelje borilačkih sportova, za one koje zanima
     istorija razvoja veština i različitost kultura i njihov uticaj na njih. Upoznajte ljude različith mišljenja i delite iskustva. ">
-
     <link rel="stylesheet" href="css/opsti.css">
     <link rel="stylesheet" href="css/maincss.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Shalimar&family=Yellowtail&display=swap"
-        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+    </style>
 </head>
+
 <body class="noselect">
     <header>
         <nav id="dataNav">
@@ -35,21 +34,29 @@
                         <li><a class="aNav" href="#">O nama</a></li>
                         <li class="dropdown"><a class="aNav" href="#">Borilačke veštine</a>
                             <ul class="dropdown-content">
-
-                                <li><a href="#">Muay Thai</a></li>
-
-
-                                <li><a href="#">Brazilska jiu jitsa</a></li>
-
-
-                                <li><a href="#">Savate</a></li>
-
+                                <li><a class="dataDrop" href="#">Brazilska jiu jitsa</a></li>
+                                <li><a class="dataDrop" href="#">Judo</a></li>
+                                <li><a class="dataDrop" href="#">Karate</a></li>
+                                <li><a class="dataDrop" href="#">MMA</a></li>
+                                <li><a class="dataDrop" href="#">Savate</a></li>
+                                <li><a class="dataDrop" href="#">Tajlandski boks</a></li>
                             </ul>
                         </li>
-                        <li><a class="aNav" href="#">Proba</a></li>
+                        <li class="dropdown"><a class="aNav" href="#">Borilačke veštine</a>
+                            <ul class="dropdown-content">
+                                <li><a class="dataDrop" href="#">Brazilska jiu jitsa</a></li>
+                                <li><a class="dataDrop" href="#">Judo</a></li>
+                                <li><a class="dataDrop" href="#">Karate</a></li>
+                                <li><a class="dataDrop" href="#">MMA</a></li>
+                                <li><a class="dataDrop" href="#">Savate</a></li>
+                                <li><a class="dataDrop" href="#">Tajlandski boks</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="aNav" href="#">Novosti</a></li>
                         <li><a class="aNav" href="#">Forum</a></li>
                         <li><a class="aNav" href="login.html">Prijava</a></li>
                         <li><a class="aNav" href="#">Kontakt</a></li>
+                        <li><a class="aNav" href="#">Donacije</a></li>
                     </ul>
                 </li>
             </ul>
@@ -62,8 +69,10 @@
         </aside>
         <section class="uvod">
             <h1> Uvodna reč</h1>
-            <p class="paragrafMain">Cilj ovog sajta je Vaše upoznavanje sa različitim borilačkim veštinama, njihov
-                razvoj kroz istoriju, upotrebu i svrhu.
+            <p class="paragrafMain">Dobrodošli! Ovaj sajt je namenjen za sve ljubitelje borilačkih sportova i veština.
+                Nudimo Vam informacije o svim borilačkim
+                sportovima/veštinama, informacije sa sportskih događaja, forum za diskusiju i razmenu mišljenja i mnogo
+                drugih stvari...
             </p>
             <strong style="font-size: 2.8em; line-height: 2em;" id="bitno">Bitno!</strong>
             <p class="paragrafMain">Borilačke veštine <strong>nisu namenjene</strong> kako bi ih zloupotrebljavali
@@ -124,6 +133,13 @@
         </section> -->
     </main>
 
+    <!-- <div style="position: relative; border: 2px solid orange;">
+        <footer style="position: absolute; bottom: 0px; width: 100%;">
+            <p>&copy; Ilija Purić, projekat iz predmeta <q>Razvoj internet poslovnih rešenja</q> 2021.godina </p>
+        </footer>
+    </div> -->
+
     <script src="js/main.js"></script>
 </body>
+
 </html>

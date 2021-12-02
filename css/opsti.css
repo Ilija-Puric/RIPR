@@ -93,9 +93,36 @@ nav {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--crna);
+}
+
+a:visited {
+    color: var(--ljubicasta);
+}
+
+a:hover {
+    color: var(--roze);
+}
+
+a:active {
+    color: var(--crvena);
+}
+
+.aNav::before {
+    content: ">";
+    transition: padding-right 0.4s ease-in-out;
+}
+.aNav:hover::before {
+    padding-right: 10px;
+}
+
 .aNav {
     color: var(--crna);
-    text-decoration: none;
     font-size: 1.24em;
     font-weight: 500;
 
@@ -116,19 +143,7 @@ nav {
     list-style-type: none;
 }
 
-li>a:hover {
-    color: var(--roze);
-}
 
-.aNav::before {
-    content: ">";
-    transition: padding-right 0.4s ease-in-out;
-}
-
-.aNav:hover::before {
-    padding-right: 10px;
-
-}
 
 .dropdown {
     position: relative;
