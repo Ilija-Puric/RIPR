@@ -1,3 +1,7 @@
+/* body {
+  background-color: var(--roze);
+} */
+
 main {
   text-align: center;
   display: grid;
@@ -67,8 +71,8 @@ main > div > h1 {
 }
 
 button:hover {
-  color: var(--crna);
-  border-color: var(--crna);
+  color: var(--bela);
+  border-color: var(--bela);
 }
 
 #loginLink {
@@ -84,7 +88,7 @@ button:hover {
 }
 
 #loginLink:hover {
-  color: var(--crna);
+  color: var(--bela);
 }
 
 #loginLink:active {
