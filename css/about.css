@@ -1,6 +1,7 @@
 main {
   padding: 15px 50px;
 }
+
 #mainSec {
   text-align: center;
   margin: 0 15%;
@@ -40,8 +41,16 @@ h2 + ol {
   font-size: 1.4rem;
 }
 
+#bushidoKod {
+  padding-top: 20px;
+  letter-spacing: 0.15em;
+  text-shadow: 1px 4px 5px rgba(10, 4, 2, 0.73);
+}
 .bushidoSekcija {
   line-height: 2.6rem;
+}
+.bushido {
+  padding-top: 20px;
 }
 
 dt {
@@ -55,14 +64,18 @@ figure > img {
 }
 
 @media screen and (max-width: 1245px) {
+  main {
+    padding: 25px 0px;
+  }
   #sec1,
   #sec2 {
     float: none;
-    width: 100%;
     text-align: center;
+    width: 99vw;
   }
-  main {
-    padding: 25px 0px;
+  figure {
+    width: 95%;
+    padding-left: 3%;
   }
   li {
     list-style-position: inside;
