@@ -201,7 +201,11 @@ button {
   font-size: 1.7rem;
 }
 
-@media screen and (max-width: 1245px) {
+@media screen and (max-width: 1422px) {
+  nav {
+    justify-content: space-between;
+  }
+
   .hamburgerCeo {
     display: block;
   }
@@ -245,10 +249,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1245px) and (min-width: 600px) {
-  nav {
-    justify-content: space-between;
-  }
+@media screen and (max-width: 1422px) and (min-width: 600px) {
   .navItems {
     width: 300px;
     padding-left: 20px;
@@ -256,11 +257,23 @@ button {
 }
 
 @media screen and (max-width: 600px) {
-  nav {
-    justify-content: space-between;
-  }
   .navItems {
     width: 100vw;
+    overflow: none;
+    height: 100vh;
+    padding: 0px;
+
+    gap: 30px;
     align-items: center;
+
+    /*Z index -1 kako bi nav bio vidljiv iako je 100vh dropdown*/
+    top: -12px;
+    z-index: -1;
+  }
+  .dropdown-content li {
+    padding: 0px 0px;
+  }
+  .dataDrop {
+    font-size: 1.15rem;
   }
 }

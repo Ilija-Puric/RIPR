@@ -55,6 +55,7 @@
 const hamburger = document.querySelector(".hamburgerCeo");
 const liste = document.querySelector(".wrapper");
 const hamLinije = document.querySelectorAll(".linija");
+const footer = document.getElementsByTagName("footer");
 
 var stepen = 0;
 
@@ -103,7 +104,7 @@ function mobile() {
 
 function tablet() {
   const mql = window.matchMedia(
-    "screen and (min-width: 600px) and (max-width: 1245px)"
+    "screen and (min-width: 600px) and (max-width: 1422px)"
   );
   checkMedia(mql);
   mql.addListener(checkMedia);
@@ -121,7 +122,7 @@ function tablet() {
   }
 }
 function desktop() {
-  const mql = window.matchMedia("screen and (min-width: 1245px)");
+  const mql = window.matchMedia("screen and (min-width: 1422px)");
   checkMedia(mql);
   mql.addListener(checkMedia);
   function checkMedia(mql) {
