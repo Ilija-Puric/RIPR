@@ -267,11 +267,11 @@ button {
     align-items: center;
 
     /*Z index -1 kako bi nav bio vidljiv iako je 100vh dropdown*/
-    top: -12px;
+    top: -7px;
     z-index: -1;
   }
   .dropdown-content li {
-    padding: 0px 0px;
+    padding: 9px 0px;
   }
   .dataDrop {
     font-size: 1.15rem;

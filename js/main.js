@@ -1,71 +1,76 @@
-// hamburger.addEventListener("click", e => {
-//     if (liste.style.display == "none") {
-//         /*Aktiv*/
-//         liste.style.display = "block";
-//         stepen += 360;
-//         for (var i = 0; i < hamLinije.length; i++) {
-//             hamLinije[i].style.webkitTransform = 'rotate(' + stepen + 'deg)';
-//             if (i == 1) {
-//                 hamLinije[i].style.width = "45px";
-//             }
-//         }
-//         hamLinije[0].style.transition = "all 0.3s ease-out";
-//         hamLinije[1].style.transition = "all 0.4s ease-out";
-//         hamLinije[2].style.transition = "all 0.3s ease-out";
-
-//     }
-//     else {
-//         for (var i = 0; i < hamLinije.length; i++) {
-//             // hamLinije[i].style.webkitTransform = 'rotate(' + 0 + 'deg)';
-//             hamLinije[i].style.width = "35px";
-//         }
-//         hamLinije[0].style.transition = "all 0.2s ease-out";
-//         hamLinije[1].style.transition = "all 0.2s ease-out";
-//         hamLinije[2].style.transition = "all 0.2s ease-out";
-//         liste.style.display = "none";
-//     }
-// });
-// function proveriEkran(x) {
-//     if (x.matches) { // If media query matches
-//         liste.style.display = "block";
-
-//         stepen = 0;
-//         for (var i = 0; i < hamLinije.length; i++) {
-//             hamLinije[i].style.display = "none";
-//             /*Ovo radim kako mi se ne bi okretlo ko lud hamburger prilikom resize-a   */
-//             hamLinije[i].style.webkitTransform = 'rotate(' + stepen + 'deg)';
-//             hamLinije[i].style.transition = "none";
-//         }
-//     }
-//     else {
-//         liste.style.display = "none";
-//         for (var i = 0; i < hamLinije.length; i++) {
-//             hamLinije[i].style.display = "block";
-//             /*U slucaju povlacenja dok je selektovana lista sto
-//         dovodi do promene ekrana i loseg aktiv stanja hamburgera*/
-//             hamLinije[i].style.width = "30px";
-//         }
-//     }
-// }
-
-// var x =window.matchMedia("(min-width: 1182px)");
-// proveriEkran(x); // Call listener function at run time
-// x.addListener(proveriEkran); // Attach listener function on state changes
-
 const hamburger = document.querySelector(".hamburgerCeo");
 const liste = document.querySelector(".wrapper");
 const hamLinije = document.querySelectorAll(".linija");
 const footer = document.getElementsByTagName("footer");
+const html = document.documentElement;
+const body = document.getElementsByTagName("body")[0];
+
+const fon = window.matchMedia("screen and (max-width: 600px)");
+const tablet = window.matchMedia(
+  "screen and (min-width: 600px) and (max-width: 1422px)"
+);
+const pc = window.matchMedia("screen and (min-width: 1422px)");
 
 var stepen = 0;
+var trenutnaLokacija;
 
-desktop();
-tablet();
-mobile();
+dalJeFon(fon);
+fon.addListener(dalJeFon);
+function dalJeFon(fon) {
+  if (fon.matches) {
+    liste.style.display = "none";
+    for (var i = 0; i < hamLinije.length; i++) {
+      hamLinije[i].style.display = "block";
+      /*U slucaju povlacenja dok je selektovana lista sto 
+          dovodi do promene ekrana i loseg aktiv stanja hamburgera*/
+      hamLinije[i].style.width = "30px";
+    }
+    trenutnaLokacija = "mobile";
+    console.log(trenutnaLokacija);
+  }
+}
+
+dalJeTablet(tablet);
+tablet.addListener(dalJeTablet);
+function dalJeTablet(tablet) {
+  if (tablet.matches) {
+    liste.style.display = "none";
+    for (var i = 0; i < hamLinije.length; i++) {
+      hamLinije[i].style.display = "block";
+      /*U slucaju povlacenja dok je selektovana lista sto 
+                dovodi do promene ekrana i loseg aktiv stanja hamburgera*/
+      hamLinije[i].style.width = "30px";
+    }
+    footer[0].style.display = "block";
+
+    trenutnaLokacija = "tablet";
+    console.log(trenutnaLokacija);
+  }
+}
+
+dalJePc(pc);
+pc.addListener(dalJePc);
+function dalJePc(pc) {
+  if (pc.matches) {
+    // If media query matches
+    liste.style.display = "block";
+    stepen = 0;
+    for (var i = 0; i < hamLinije.length; i++) {
+      hamLinije[i].style.display = "none";
+      /*Ovo radim kako mi se ne bi okretlo ko lud hamburger prilikom resize-a   */
+      hamLinije[i].style.webkitTransform = "rotate(" + stepen + "deg)";
+      hamLinije[i].style.transition = "none";
+    }
+    footer[0].style.display = "block";
+    trenutnaLokacija = "desktop";
+    console.log(trenutnaLokacija);
+  }
+}
 
 hamburger.addEventListener("click", (e) => {
   if (liste.style.display == "none") {
     /*Aktiv*/
+
     liste.style.display = "block";
     stepen += 360;
     for (var i = 0; i < hamLinije.length; i++) {
@@ -77,66 +82,24 @@ hamburger.addEventListener("click", (e) => {
     hamLinije[0].style.transition = "all 0.3s ease-out";
     hamLinije[1].style.transition = "all 0.4s ease-out";
     hamLinije[2].style.transition = "all 0.3s ease-out";
+
+    if (trenutnaLokacija == "mobile") {
+      /*Da footer ne vidimo*/
+      footer[0].style.display = "none";
+      /*zakljucava dropdown u mestu*/
+      /*Bespotrebno*/
+      // html.style.height = "100%";
+      // body.style.height = "100%";
+      html.style.overflow = "hidden";
+      body.style.overflow = "hidden";
+    }
   } else {
     hamLinije[1].style.width = "30px";
     hamLinije[1].style.transition = "all 0.2s ease-out";
     liste.style.display = "none";
+    footer[0].style.display = "block";
+
+    html.style.overflowY = "scroll";
+    body.style.overflowY = "scroll";
   }
 });
-
-function mobile() {
-  const mql = window.matchMedia("screen and (max-width: 600px)");
-  checkMedia(mql);
-  mql.addListener(checkMedia);
-  function checkMedia(mql) {
-    if (mql.matches) {
-      liste.style.display = "none";
-      for (var i = 0; i < hamLinije.length; i++) {
-        hamLinije[i].style.display = "block";
-        /*U slucaju povlacenja dok je selektovana lista sto 
-            dovodi do promene ekrana i loseg aktiv stanja hamburgera*/
-        hamLinije[i].style.width = "30px";
-      }
-      console.log("Mobile");
-    }
-  }
-}
-
-function tablet() {
-  const mql = window.matchMedia(
-    "screen and (min-width: 600px) and (max-width: 1422px)"
-  );
-  checkMedia(mql);
-  mql.addListener(checkMedia);
-  function checkMedia(mql) {
-    if (mql.matches) {
-      liste.style.display = "none";
-      for (var i = 0; i < hamLinije.length; i++) {
-        hamLinije[i].style.display = "block";
-        /*U slucaju povlacenja dok je selektovana lista sto 
-                dovodi do promene ekrana i loseg aktiv stanja hamburgera*/
-        hamLinije[i].style.width = "30px";
-      }
-      console.log("tablet");
-    }
-  }
-}
-function desktop() {
-  const mql = window.matchMedia("screen and (min-width: 1422px)");
-  checkMedia(mql);
-  mql.addListener(checkMedia);
-  function checkMedia(mql) {
-    if (mql.matches) {
-      // If media query matches
-      liste.style.display = "block";
-      stepen = 0;
-      for (var i = 0; i < hamLinije.length; i++) {
-        hamLinije[i].style.display = "none";
-        /*Ovo radim kako mi se ne bi okretlo ko lud hamburger prilikom resize-a   */
-        hamLinije[i].style.webkitTransform = "rotate(" + stepen + "deg)";
-        hamLinije[i].style.transition = "none";
-      }
-      console.log("desktop");
-    }
-  }
-}
