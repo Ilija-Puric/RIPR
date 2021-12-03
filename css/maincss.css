@@ -130,6 +130,10 @@ button:hover {
     margin-top: 5px;
     margin-bottom: 45px;
   }
+  .paragrafMain {
+    font-size: 1.3rem;
+    padding: 0 10%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -152,7 +156,7 @@ button:hover {
   }
   .paragrafMain {
     font-size: 1.3rem;
-    padding: 0 3%;
+    padding: 0px 4%;
   }
   footer > p > small {
     font-size: 0.7rem;
