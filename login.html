@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="sr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Borilački kutak</title>
-    <link rel="stylesheet" href="opsti.css">
-    <link rel="stylesheet" href="maincss.css">
+    <link rel="stylesheet" href="opsti.css" />
+    <link rel="stylesheet" href="maincss.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Shalimar&family=Yellowtail&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Shalimar&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- font-family: 'Manrope', sans-serif;
     font-family: 'Shalimar', cursive;
     font-family: 'Yellowtail', cursive; -->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav>
-            <a href="main.html"><img id="logo" src="Slike main/logoBlack.png" alt="slika logo-a"></a>
-            <ul class="listeFlex">
-                <li class="preHamburger"><a class="aNav" href="#">O nama</a></li>
-                <li class="preHamburger"><a class="aNav" href="#">Borilačke veštine</a></li>
-                <li class="preHamburger"><a class="aNav" href="#">Proba</a></li>
-                <li class="preHamburger"><a class="aNav" href="#">Forum</a></li>
-                <li class="preHamburger"><a class="aNav" href="#">Prijava</a></li>
-                <li class="preHamburger"><a class="aNav" href="#">Kontakt</a></li>
-
-                <!--Dodaj drop down menu-->
-                <ul class="hamburgerIkona">
-                    <li class="linija"></li>
-                    <li class="linija"></li>
-                    <li class="linija"></li>
+      <nav id="dataNav">
+        <a href="main.html"
+          ><img id="logo" src="Slike/logoBlack.png" alt="slika logo-a"
+        /></a>
+        <ul class="container">
+          <ul class="hamburgerCeo">
+            <li class="linija"></li>
+            <li class="linija"></li>
+            <li class="linija"></li>
+          </ul>
+          <li class="wrapper">
+            <ul class="navItems">
+              <li><a id="youAreHere" class="aNav" href="#">O nama</a></li>
+              <li class="dropdown">
+                <a class="aNav aNavBoth" href="#">Borilačke veštine</a>
+                <ul class="dropdown-content">
+                  <li>
+                    <a class="dataDrop aNavBoth" href="#"
+                      >Brazilska jiu jitsa</a
+                    >
+                  </li>
+                  <li><a class="dataDrop aNavBoth" href="#">Judo</a></li>
+                  <li><a class="dataDrop aNavBoth" href="#">Karate</a></li>
+                  <li><a class="dataDrop aNavBoth" href="#">MMA</a></li>
+                  <li><a class="dataDrop aNavBoth" href="#">Savate</a></li>
+                  <li>
+                    <a class="dataDrop aNavBoth" href="#">Tajlandski boks</a>
+                  </li>
                 </ul>
-
+              </li>
+              <li><a class="aNav aNavBoth" href="#">Sportisti</a></li>
+              <li><a class="aNav aNavBoth" href="#">Novosti</a></li>
+              <li><a class="aNav aNavBoth" href="#">Forum</a></li>
+              <li><a class="aNav aNavBoth" href="login.html">Prijava</a></li>
+              <li><a class="aNav aNavBoth" href="#">Kontakt</a></li>
+              <li><a class="aNav aNavBoth" href="#">Donacije</a></li>
             </ul>
-        </nav>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-
-
-    </main>
-
-
-
-</body>
-
+    <main></main>
+  </body>
 </html>
