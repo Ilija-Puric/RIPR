@@ -15,6 +15,7 @@ const pc = window.matchMedia("screen and (min-width: 1422px)");
 
 var stepen = 0;
 var trenutnaLokacija;
+var brojKlikova = 0;
 
 dalJeFon(fon);
 fon.addListener(dalJeFon);

@@ -5,33 +5,29 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Borilački kutak</title>
-  <link rel="stylesheet" href="opsti.css" />
-  <link rel="stylesheet" href="maincss.css" />
+  <title>Prijava</title>
+  <link rel="stylesheet" href="css/opsti.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Shalimar&family=Yellowtail&display=swap"
-    rel="stylesheet" />
-
-  <!-- font-family: 'Manrope', sans-serif;
-    font-family: 'Shalimar', cursive;
-    font-family: 'Yellowtail', cursive; -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+  </style>
 </head>
 
-<body>
+<body class="noselect">
   <header>
     <nav id="dataNav">
-      <a href="main.html"><img id="logo" src="Slike/logoBlack.png" alt="slika logo-a" /></a>
+      <a href="main.html"><img id="logo" src="Slike/logoOrange.png" alt="slika logo-a" /></a>
       <ul class="container">
-        <ul class="hamburgerCeo">
-          <li class="linija"></li>
-          <li class="linija"></li>
-          <li class="linija"></li>
-        </ul>
+        <li>
+          <ul class="hamburgerCeo">
+            <li class="linija"></li>
+            <li class="linija"></li>
+            <li class="linija"></li>
+          </ul>
+        </li>
         <li class="wrapper">
           <ul class="navItems">
-            <li><a id="youAreHere" class="aNav" href="#">O nama</a></li>
+            <li><a class="aNav aNavBoth" href="about.html">O nama</a></li>
             <li class="dropdown">
               <a class="aNav aNavBoth" href="#">Borilačke veštine</a>
               <ul class="dropdown-content">
@@ -42,10 +38,18 @@
                 <li><a class="dataDrop aNavBoth" href="#">Karate</a></li>
                 <li><a class="dataDrop aNavBoth" href="#">MMA</a></li>
                 <li><a class="dataDrop aNavBoth" href="#">Savate</a></li>
-                <li> <a class="dataDrop aNavBoth" href="#">Tajlandski boks</a> </li>
+                <li>
+                  <a class="dataDrop aNavBoth" href="#">Tajlandski boks</a>
+                </li>
               </ul>
             </li>
-            <li><a class="aNav aNavBoth" href="#">Sportisti</a></li>
+            <li class="dropdown">
+              <a class="aNav aNavBoth" href="#">Poznate ličnosti</a>
+              <ul class="dropdown-content">
+                <li><a class="dataDrop aNavBoth" href="#">Sportisti</a></li>
+                <li><a class="dataDrop aNavBoth" href="#">Legende</a></li>
+              </ul>
+            </li>
             <li><a class="aNav aNavBoth" href="#">Novosti</a></li>
             <li><a class="aNav aNavBoth" href="#">Forum</a></li>
             <li><a class="aNav aNavBoth" href="login.html">Prijava</a></li>
@@ -57,7 +61,16 @@
     </nav>
   </header>
 
-  <main></main>
-</body>
+  <main>
+  </main>
 
-</html>
+  <footer>
+    <p>
+      <small>
+        &copy; Ilija Purić, projekat iz predmeta
+        <q>Razvoj internet poslovnih rešenja</q> 2021.godina</small>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
