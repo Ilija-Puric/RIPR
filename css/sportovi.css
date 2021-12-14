@@ -39,16 +39,25 @@ main a:hover {
   opacity: 2;
 }
 @keyframes pozadinaH {
-  from {
+  /* from {
     padding: 0px;
   }
   to {
     padding: 0px 0px 0px 100px;
+  } */
+  0% {
+    padding: 0;
+  }
+  50% {
+    padding: 0px 60px 0px 0px;
+  }
+  100% {
+    padding: 0px 0px 0px 60px;
   }
 }
 main a:hover {
   animation: pozadinaH 1s ease-in-out alternate infinite;
-  animation-iteration-count: 6;
+  animation-iteration-count: 2;
 }
 
 @media screen and (min-width: 1200px) {
@@ -69,6 +78,6 @@ main a:hover {
 
 @media screen and (min-width: 280px) and (max-width: 1200px) {
   figcaption:last-child {
-    bottom: 25px;
+    bottom: 45px;
   }
 }
