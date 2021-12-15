@@ -1,3 +1,33 @@
+#mainUvod {
+  text-align: center;
+}
+#mainUvod h1 {
+  padding-top: 30px;
+  font-size: 3.4em;
+  margin-bottom: 20px;
+}
+
+#mainUvod p {
+  font-size: 1.4em;
+  padding: 0px 2.5% 20px 2.5%;
+}
+
+#mainUvod > img {
+  width: 100%;
+}
+
+#mainUvod + section p {
+  font-size: 1.4em;
+}
+
+#mainUvod + section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 1200px) {
   #mainUvod {
     width: 100%;
@@ -6,16 +36,21 @@
   #mainUvod p {
     float: left;
     width: 45%;
-    text-align: left;
     margin-left: 5%;
-    font-size: 1.8em;
+    text-align: left;
+    /* margin-left: 5%; */
+    font-size: 2.2em;
     padding: 0px;
   }
 
   #mainUvod > img {
-    float: left;
+    float: inline-start;
     width: 45%;
     margin-right: 5%;
+    max-width: 700px;
+
+    /* margin-right: 5%; */
+    /* max-width: 800px; */
   }
   #mainUvod h1 {
     padding-top: 30px;
