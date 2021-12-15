@@ -33,6 +33,8 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
   justify-items: center;
+  height: auto;
+  margin: auto;
 }
 
 main a:hover {

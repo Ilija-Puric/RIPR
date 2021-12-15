@@ -1,0 +1,39 @@
+@media screen and (min-width: 1200px) {
+  #mainUvod {
+    width: 100%;
+  }
+
+  #mainUvod p {
+    float: left;
+    width: 45%;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 1.8em;
+    padding: 0px;
+  }
+
+  #mainUvod > img {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+  #mainUvod h1 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  #mainUvod + section p {
+    font-size: 1.8em;
+  }
+  #mainUvod + section > h2 {
+    font-size: 3em;
+  }
+  #mainUvod + section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
