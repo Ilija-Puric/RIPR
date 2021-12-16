@@ -7,11 +7,11 @@ const body = document.getElementsByTagName("body")[0];
 const scrollbarWidth =
   window.innerWidth - document.querySelector("body").clientWidth;
 
-const fon = window.matchMedia("screen and (max-width: 600px)");
+const fon = window.matchMedia("screen and (max-width: 500px)");
 const tablet = window.matchMedia(
-  "screen and (min-width: 600px) and (max-width: 1422px)"
+  "screen and (min-width: 500px) and (max-width: 1200px)"
 );
-const pc = window.matchMedia("screen and (min-width: 1422px)");
+const pc = window.matchMedia("screen and (min-width: 1200px)");
 
 var stepen = 0;
 var trenutnaLokacija;

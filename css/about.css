@@ -1,13 +1,23 @@
 main {
-  padding: 15px 15%;
+  padding: 25px 0px;
+}
+#sec1,
+#sec2 {
+  text-align: center;
+}
+.bushido {
+  height: fit-content;
 }
 
+li {
+  list-style-position: inside;
+}
 #mainSec {
   text-align: center;
   margin: 0 15%;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.7rem;
 }
 
 h1 + p {
@@ -15,23 +25,12 @@ h1 + p {
 }
 
 .info {
-  font-size: 1.2rem;
+  padding: 15px 5px;
+  font-size: 1.3rem;
 }
 #sec1,
 #sec2 {
-  padding-top: 50px;
-}
-
-#sec1 {
-  float: left;
-  width: 60%;
-}
-
-#sec2 {
-  float: left;
-  width: 39%;
-  margin-left: 1%;
-  text-align: center;
+  padding-top: 35px;
 }
 
 h2 {
@@ -41,7 +40,6 @@ h2 {
 h2 + ol {
   font-size: 1.4rem;
 }
-
 #bushidoKod {
   padding-top: 20px;
   letter-spacing: 0.15em;
@@ -53,7 +51,6 @@ h2 + ol {
 .bushido {
   margin-top: 20px;
 }
-
 dt {
   font-size: 1.8rem;
   text-shadow: 1px 4px 5px rgba(10, 4, 2, 0.33);
@@ -65,32 +62,32 @@ figure > img {
   width: 100%;
 }
 
-@media screen and (max-width: 2209px) {
-  .bushido {
-    height: 250px;
-    overflow-y: scroll;
-  }
+/* main {
+  padding: 15px 10%;
 }
 
-@media screen and (max-width: 1245px) {
-  main {
-    padding: 25px 0px;
+
+#sec2 {
+min-width: 600px;
+  } */
+
+@media screen and (min-width: 1200px) {
+  #sec1 {
+    float: left;
+    width: 60%;
   }
-  #sec1,
-  #sec2 {
-    float: none;
-    text-align: center;
-    width: 99vw;
-  }
-  .bushido {
-    height: fit-content;
+  figure img {
+    width: 100%;
+    margin: 0px 2%;
+    max-width: 1000px;
+    /* min-width: 1000px; */
   }
 
-  figure {
-    width: 95%;
-    padding-left: 3%;
-  }
-  li {
-    list-style-position: inside;
+  #sec2 {
+    float: left;
+    width: 39%;
+    margin-left: 1%;
+    text-align: center;
+    max-width: 610px;
   }
 }
