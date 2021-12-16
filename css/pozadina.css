@@ -1,0 +1,11 @@
+main {
+  background-image: url(../slike/pozadinaArts.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*Top*/
+  background-color: #6a7177;
+  background-blend-mode: exclusion;
+  /* background-color: #6a7177;
+    background-blend-mode: luminosity; */
+}

@@ -9,14 +9,23 @@
   font-size: 3.4em;
   margin-bottom: 20px;
 }
-
-#mainUvod p {
+#infoMT {
   font-size: 1.4em;
+}
+#tehnikeLink {
+  margin-bottom: 30px;
+  text-align: center;
+}
+#tehnikeLink > p {
+  padding-bottom: 15px;
+}
+#infoMT > p {
   padding: 0px 2.5% 20px 2.5%;
 }
 
 #mainUvod > img {
   width: 100%;
+  box-shadow: rgba(210, 105, 30, 0.411) 20px 10px 90px;
 }
 
 #mainUvod + section p {
@@ -30,18 +39,45 @@
   justify-content: center;
   align-items: center;
 }
+.federacije {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* .federacije img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.federacije img:nth-child(4) {
+  width: 290px;
+  height: 290px;
+  border-radius: 0%;
+  margin-top: -20px;
+} */
+
+.federacije img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
+.federacije img:nth-child(4) {
+  width: 300px;
+  height: 300px;
+  border-radius: 0%;
+  margin-top: -20px;
+}
 
 @media screen and (min-width: 1200px) {
   #mainUvod {
     width: 100%;
     height: 100%;
-    /* background-color: rebeccapurple; */
-  }
-  #infoMT {
-    /* background-color: whitesmoke; */
   }
 
-  #mainUvod p {
+  #infoMT {
     float: left;
     width: 45%;
     margin-left: 5%;
@@ -69,14 +105,25 @@
   #mainUvod + section p {
     font-size: 1.8em;
   }
-  #mainUvod + section > h2 {
-    font-size: 3em;
-  }
+
   #mainUvod + section {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: baseline;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 0px 100px;
+  }
+  #org {
+    padding: 0px;
+  }
+  .federacije {
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+  }
+  .federacije img:nth-child(4) {
+    margin-left: -20px;
+    margin-top: 0px;
   }
 }
