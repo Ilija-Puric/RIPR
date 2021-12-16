@@ -1,66 +1,32 @@
-main {
+#welcome {
   text-align: center;
-  display: grid;
-  grid-template-areas:
-    "top top"
-    "left right"
-    "bottom bottom";
-  gap: 30px;
 }
-
-#gridTop {
-  grid-area: top;
-  justify-self: center;
-}
-
-#gridLeft {
-  grid-area: left;
-}
-#gridLeft > img {
-  float: right;
-  width: 50vw;
-  min-width: 682px;
-
-  margin: 0;
-  margin-right: 20px;
-}
-
-#gridRight {
-  grid-area: right;
-}
-
-main > div > h1 {
-  font-size: 3.8rem;
+#welcome > h1 {
+  font-size: 3.4rem;
   font-weight: normal;
 }
-
 .uvod {
-  text-align: left;
-  line-height: 2.6rem;
+  text-align: center;
+  line-height: 2.4rem;
 }
-
-.uvod > h1 {
-  line-height: 3.2rem;
+aside > img {
+  width: 100%;
 }
 
 #uvodH1 {
-  font-size: 3.7rem;
-  font-weight: normal;
-  margin-bottom: 50px;
-  text-decoration: 2px solid underline;
-}
-
-.paragrafMain {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.promocija {
-  text-align: left;
-}
-
-.nalog {
+  font-size: 2.6rem;
   margin-top: 10px;
+  margin-bottom: 20px;
+}
+.paragrafMain {
+  font-size: 1.3rem;
+  padding: 0px 4%;
+}
+.nalog {
+  padding-bottom: 30px;
+}
+footer > p > small {
+  font-size: 0.7rem;
 }
 
 button:hover {
@@ -88,70 +54,73 @@ button:hover {
   color: var(--crvena);
 }
 
-@media screen and (max-width: 1484px) {
-  main {
-    grid-template-areas:
-      "top top"
-      "center center"
-      "bottom bottom";
-    gap: 20px;
+#prijavaDiv {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  aside {
+    float: left;
+    /* width: 43%; */
+    width: 52%;
+    margin-left: 8%;
+    max-width: 850px;
+  }
+  aside > img {
+    width: 100%;
+  }
+  .uvod {
+    float: left;
+    /* width: 57%; */
+    width: 40%;
+  }
+  #prijavaDiv {
+    clear: left;
+    /* padding-top: 2%; */
+    /* padding: 15px 0px 5px 0px;
+    background-color: rgba(239, 242, 243, 0.972);
+    border-radius: 10px;
+    box-shadow: rgb(128, 128, 128) 20px 40px 60px 50px;
+    width: 400px;
+    margin: 0 auto; */
+  }
+  #prijavaP1 {
+    font-size: 1.5rem !important;
+  }
+  .nalog {
+    font-size: 1.1rem;
+  }
+  main > div > h1 {
+    font-size: 3.8rem;
+    font-weight: normal;
   }
 
-  #gridTop {
-    grid-area: top;
-    justify-self: center;
+  .uvod p {
+    text-align: left;
+    line-height: 2.6rem;
   }
-
-  #gridLeft {
-    grid-area: center;
-    display: flex;
-    justify-content: center;
-  }
-  #gridLeft > img {
-    /* padding-right: 10%; */
-    padding-left: 20px;
-    width: 70%;
-    min-width: 300px;
-    float: none;
-  }
-  #gridRight {
-    grid-area: bottom;
+  .uvod > div > p {
     text-align: center;
+  }
+  .uvod > h1 {
+    line-height: 3.2rem;
+  }
+  #uvodH1 {
+    font-size: 3.7rem;
+    font-weight: normal;
+    margin-bottom: 50px;
+    text-decoration: 2px solid underline;
+  }
+
+  .paragrafMain {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .promocija {
+    text-align: left;
   }
 
   .nalog {
-    margin-top: 5px;
-    margin-bottom: 45px;
-  }
-  .paragrafMain {
-    font-size: 1.3rem;
-    padding: 0 10%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  main > div > h1 {
-    font-size: 3rem;
-    font-weight: normal;
-  }
-  #gridLeft > img {
-    min-width: 250px;
-  }
-
-  .uvod {
-    text-align: left;
-    line-height: 2.4rem;
-  }
-
-  #uvodH1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-  }
-  .paragrafMain {
-    font-size: 1.3rem;
-    padding: 0px 4%;
-  }
-  footer > p > small {
-    font-size: 0.7rem;
+    margin-top: 10px;
   }
 }
