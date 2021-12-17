@@ -1,0 +1,104 @@
+nav {
+  justify-content: center;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+h1 {
+  background-color: rgb(204, 95, 52);
+  width: 100%;
+  text-align: center;
+  padding: 15px 0px;
+}
+form {
+  background-color: rgb(226, 228, 227);
+  box-shadow: rgba(211, 91, 22, 0.089) 10px 5px 50px 30px;
+  /* border: 2px solid black; */
+  /* position: absolute; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 90%;
+  min-width: 290px;
+  max-width: 750px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -2;
+}
+div:nth-of-type(1) {
+  padding-top: 30px;
+  background-color: transparent;
+}
+
+form > div > label {
+  font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  /*Lepsi text-fieldovi sa bold*/
+  font-weight: bold;
+  width: 200px;
+  height: 30px;
+  background-color: rgb(226, 228, 227);
+  border: none;
+  border-bottom: 2px solid rgb(211, 91, 22);
+  outline: none;
+  font-size: 1.4rem;
+  transition: all 0.1s linear;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-bottom: 3px solid rgb(211, 91, 22);
+  padding-left: 5px;
+  font-size: 1.7rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 3px solid rgb(211, 91, 22);
+  padding-left: 5px;
+  font-size: 1.7rem;
+  background-color: rgba(211, 91, 22, 0.137);
+}
+
+input[type="submit"] {
+  font-size: 1.1rem;
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid black;
+  transition: all 0.2s linear;
+}
+
+input[type="submit"]:hover {
+  border: 2px solid rgb(211, 91, 22);
+  color: rgb(211, 91, 22);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  form {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    max-width: 850px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

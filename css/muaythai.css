@@ -1,57 +1,7 @@
-/*Probni import*/
-@import url(boje.css);
-
-#mainUvod {
-  text-align: center;
-}
-#mainUvod h1 {
-  padding-top: 30px;
-  font-size: 3.4em;
-  margin-bottom: 20px;
-}
-#infoMT {
-  font-size: 1.4em;
-}
-#tehnikeLink {
-  margin-bottom: 30px;
-  text-align: center;
-}
-#tehnikeLink > p {
-  padding-bottom: 15px;
-}
-#infoMT > p {
-  padding: 0px 2.5% 20px 2.5%;
-}
-
 #mainUvod > img {
-  width: 100%;
   box-shadow: rgba(210, 105, 30, 0.411) 20px 10px 90px;
 }
 
-#mainUvod + section p {
-  font-size: 1.4em;
-}
-
-#mainUvod + section {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.federacije {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.federacije img {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-}
 .federacije img:nth-child(4) {
   width: 310px;
   height: 310px;
@@ -61,64 +11,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-  /* #mainUvod {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
-
-  #infoMT {
-    float: left;
-    width: 45%;
-    margin-left: 5%;
-    text-align: left;
-    font-size: 2em;
-    max-width: 800px;
-  }
-
-  #mainUvod > img {
-    float: inline-start;
-    width: 45%;
-    margin-right: 5%;
-    max-width: 800px;
-  }
-
-  #mainUvod h1 {
-    padding-top: 30px;
-    text-align: center;
-    font-size: 4em;
-    margin-bottom: 20px;
-  }
-  #mainUvod + section p {
-    font-size: 1.8em;
-  }
-
-  #mainUvod + section {
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin: 0px 100px;
-  }
-  #org {
-    padding: 0px;
-  }
-  .federacije {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
   .federacije img:nth-child(4) {
     margin-left: -15px;
     margin-top: 0px;
-  }
-
-  /*Popravlja problem koji float ostavlja na svoje elemente*/
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
   }
 }
