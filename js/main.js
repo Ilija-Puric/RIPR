@@ -4,8 +4,6 @@ const hamLinije = document.querySelectorAll(".linija");
 const footer = document.getElementsByTagName("footer");
 const html = document.documentElement;
 const body = document.getElementsByTagName("body")[0];
-const scrollbarWidth =
-  window.innerWidth - document.querySelector("body").clientWidth;
 
 const fon = window.matchMedia("screen and (max-width: 500px)");
 const tablet = window.matchMedia(
@@ -15,7 +13,11 @@ const pc = window.matchMedia("screen and (min-width: 1200px)");
 
 var stepen = 0;
 var trenutnaLokacija;
-var brojKlikova = 0;
+
+var path = window.location.pathname;
+console.log(path);
+var page = path.split("/").pop();
+console.log(page);
 
 dalJeFon(fon);
 fon.addListener(dalJeFon);
@@ -76,6 +78,13 @@ hamburger.addEventListener("click", (e) => {
 
     liste.style.display = "block";
     stepen += 360;
+
+    if (page == "forum.html") {
+      console.log("tu si");
+    } else {
+      console.log("nisi tu ");
+    }
+
     for (var i = 0; i < hamLinije.length; i++) {
       hamLinije[i].style.webkitTransform = "rotate(" + stepen + "deg)";
       if (i == 1) {

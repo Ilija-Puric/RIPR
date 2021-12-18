@@ -126,6 +126,10 @@ a:active {
 .hamburgerCeo {
   display: none;
 }
+/* .wrapper {
+  position: relative;
+  z-index: 2;
+} */
 
 .navItems {
   display: flex;
@@ -133,6 +137,9 @@ a:active {
   justify-content: center;
   gap: 35px;
   list-style-type: none;
+
+  position: relative;
+  z-index: 20;
 }
 
 footer {
