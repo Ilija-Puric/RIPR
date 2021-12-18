@@ -65,6 +65,10 @@ aside {
   cursor: pointer;
 }
 
+.anchorAccount:hover {
+  background-color: rgba(241, 152, 49, 0.349);
+}
+
 @media screen and (max-width: 1200px) {
   main {
     width: 70%;

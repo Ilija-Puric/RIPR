@@ -1,9 +1,0 @@
-.lowZindex {
-  position: relative !important;
-  z-index: -2;
-}
-
-.highZindex {
-  position: relative;
-  z-index: 5;
-}

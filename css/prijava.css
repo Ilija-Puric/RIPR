@@ -1,11 +1,11 @@
-nav {
+/* nav {
   justify-content: center;
-}
+} */
 
 main {
-  position: relative;
+  /* position: relative; */
   min-height: 100vh;
-  z-index: 1;
+  /* z-index: 5; */
 }
 
 h1 {
@@ -88,6 +88,16 @@ input[type="submit"]:hover {
   border: 2px solid rgb(211, 91, 22);
   color: rgb(211, 91, 22);
   cursor: pointer;
+}
+
+.lowZindex {
+  position: relative !important;
+  z-index: -2;
+}
+
+.highZindex {
+  position: relative;
+  z-index: 5;
 }
 
 @media screen and (min-width: 1200px) {

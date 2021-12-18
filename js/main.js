@@ -18,7 +18,14 @@ var path = window.location.pathname;
 // console.log(path);
 var page = path.split("/").pop();
 // console.log(page);
-const profil = document.getElementsByTagName("aside")[0];
+
+/*Zasad samo 2 stranice uzimam*/
+var profil;
+if (page == "forum.html") {
+  profil = document.getElementsByTagName("aside")[0];
+} else if (page == "login.html") {
+  profil = document.getElementsByTagName("main")[0];
+}
 
 dalJeFon(fon);
 fon.addListener(dalJeFon);
@@ -33,7 +40,7 @@ function dalJeFon(fon) {
     }
     trenutnaLokacija = "mobile";
 
-    if (page == "forum.html") {
+    if (profil != null) {
       profil.classList.remove("lowZindex");
       profil.classList.add("highZindex");
     }
@@ -54,7 +61,7 @@ function dalJeTablet(tablet) {
     footer[0].style.display = "block";
     trenutnaLokacija = "tablet";
 
-    if (page == "forum.html") {
+    if (profil != null) {
       profil.classList.remove("lowZindex");
       profil.classList.add("highZindex");
     }
@@ -77,7 +84,7 @@ function dalJePc(pc) {
     footer[0].style.display = "block";
     // profil.classList.toggle("lowZindex");
     trenutnaLokacija = "desktop";
-    if (page == "forum.html") {
+    if (profil != null) {
       profil.classList.remove("lowZindex");
       profil.classList.add("highZindex");
     }
@@ -90,7 +97,8 @@ hamburger.addEventListener("click", (e) => {
     liste.style.display = "block";
     stepen += 360;
 
-    if (page == "forum.html") {
+    /*Ovo mogu na svaki main staviti da skratim posao sebi*/
+    if (profil != null) {
       profil.classList.add("lowZindex");
       profil.classList.remove("highZindex");
     }
@@ -114,7 +122,7 @@ hamburger.addEventListener("click", (e) => {
     hamLinije[1].style.transition = "all 0.2s ease-out";
     liste.style.display = "none";
 
-    if (page == "forum.html") {
+    if (profil != null) {
       // profil.classList.toggle("lowZindex");
       profil.classList.add("highZindex");
       profil.classList.remove("lowZindex");

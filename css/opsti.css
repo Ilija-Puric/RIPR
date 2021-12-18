@@ -139,13 +139,15 @@ a:active {
   list-style-type: none;
 
   position: relative;
-  z-index: 20;
+  /* z-index: 20; */
 }
 
 footer {
   /* position: absolute; */
   /* position: relative; */
   position: fixed;
+  z-index: 10;
+
   background-color: rgb(12, 12, 12);
   color: var(--narandzasta);
   bottom: 0px;
@@ -182,6 +184,16 @@ button {
   color: var(--narandzasta);
   border: 3px solid var(--narandzasta);
   /* box-shadow: chocolate 10px 10px 60px; */
+}
+
+.lowZindex {
+  position: relative !important;
+  z-index: -2;
+}
+
+.highZindex {
+  position: relative;
+  z-index: 5;
 }
 
 @media screen and (max-width: 1200px) {
