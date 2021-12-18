@@ -1,0 +1,15 @@
+@import url(boje.css);
+
+.rankovi {
+  list-style: none;
+  counter-reset: mojBrojac;
+}
+.rankovi li {
+  counter-increment: mojBrojac;
+}
+.rankovi li::before {
+  content: counter(mojBrojac) ". ";
+  color: var(--crvena);
+  font-weight: bold;
+  /* font-family: Montserrat, sans-serif !important; */
+}

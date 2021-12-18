@@ -2,7 +2,7 @@
   text-align: center;
 }
 #welcome > h1 {
-  font-size: 3.4rem;
+  font-size: 3.8rem;
   font-weight: normal;
 }
 .uvod {
@@ -91,7 +91,7 @@ button:hover {
     font-size: 1.1rem;
   }
   main > div > h1 {
-    font-size: 3.8rem;
+    font-size: 4rem;
     font-weight: normal;
   }
 
@@ -102,7 +102,8 @@ button:hover {
   .uvod > div > p {
     text-align: center;
   }
-  .uvod > h1 {
+  .uvod > h1,
+  .uvod > h2 {
     line-height: 3.2rem;
   }
   #uvodH1 {
