@@ -1,6 +1,7 @@
 .insight {
   display: flex;
   flex-direction: row;
+  justify-content: safe;
 }
 
 .share {
@@ -82,10 +83,13 @@ aside {
 }
 
 @media screen and (max-width: 600px) {
+  .insight {
+    justify-content: center;
+  }
   article {
+    margin-right: 0px !important;
     padding: 0 10%;
     height: fit-content;
-    margin: 0px 0px 20px 0px;
     box-shadow: rgba(36, 34, 34, 0.349) 10px 2px 50px 1px;
   }
 
