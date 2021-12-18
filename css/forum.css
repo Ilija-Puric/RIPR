@@ -1,0 +1,147 @@
+.insight {
+  display: flex;
+  flex-direction: row;
+}
+
+.share {
+  margin-right: -20px;
+  margin-left: -30px;
+}
+
+.wrapperInsights {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperInsights p {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+main {
+  float: left;
+  width: 60%;
+  margin-left: 10%;
+  min-height: 100vh;
+}
+aside {
+  position: relative;
+  float: left;
+  width: 20%;
+  max-width: 250px;
+  min-width: 150px;
+  margin-right: 10%;
+  /* height: 100vh; */
+  background-color: rgb(20, 20, 20);
+  z-index: -2;
+}
+#avatarPodaci {
+  width: 20%;
+  position: fixed;
+  background-color: rgb(20, 20, 20);
+}
+#avatar {
+  width: 100%;
+  min-width: 150px;
+}
+#avatarPodaci p {
+  padding-left: 10px;
+  color: #fff;
+}
+#avatarPodaci p:first-child {
+  margin-bottom: 15px;
+}
+#avatarPodaci p:nth-child(1n + 2) {
+  margin-top: 5px;
+  /* background-color: rosybrown; */
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 70%;
+    margin-left: 0%;
+  }
+  aside {
+    width: 30%;
+    margin-right: 0%;
+  }
+  #avatarPodaci {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    padding: 0 10%;
+    height: fit-content;
+    margin: 0px 0px 20px 0px;
+    box-shadow: rgba(36, 34, 34, 0.349) 10px 2px 50px 1px;
+  }
+
+  article > p {
+    padding: 20px 0px 5px 0px;
+  }
+  .like {
+    margin-left: -26px;
+  }
+  .like + p {
+    margin-right: 30px;
+  }
+  .share {
+    margin-right: -18px;
+    margin-left: -40px;
+  }
+  .share + p {
+    margin-right: 29px;
+  }
+  .comment {
+    margin-left: -10px;
+  }
+
+  .comment + p {
+    margin-right: 20px;
+  }
+  main {
+    float: none;
+    width: 100%;
+    height: fit-content;
+
+    margin-left: 0%;
+  }
+  aside {
+    float: none;
+    width: 100%;
+    margin-right: 0%;
+  }
+
+  aside {
+    position: static;
+    min-width: none;
+    max-width: 100%;
+    height: fit-content;
+    padding-bottom: 60px;
+    z-index: -2;
+  }
+
+  #avatar {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+  }
+  #avatarPodaci {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 20px;
+  }
+  #avatarPodaci p {
+    margin-left: -20px;
+    color: #fff;
+  }
+}
