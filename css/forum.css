@@ -37,17 +37,11 @@ aside {
   margin-right: 10%;
   /* height: 100vh; */
   background-color: rgb(20, 20, 20);
-
-  /*turn of*/
-  /* z-index: -2; */
-  /*Namesti Z indeks preko js*/
-  /* z-index: 0; */
 }
 #avatarPodaci {
   width: 20%;
   position: fixed;
   background-color: rgb(20, 20, 20);
-  z-index: 1;
 }
 #avatar {
   width: 100%;
@@ -148,7 +142,7 @@ aside {
   }
   #avatarPodaci {
     /*Ovde img gubi pozicioniranje pa nmg z-index*/
-    position: static;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: left;
