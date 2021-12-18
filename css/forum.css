@@ -36,7 +36,9 @@ aside {
   margin-right: 10%;
   /* height: 100vh; */
   background-color: rgb(20, 20, 20);
-  z-index: -2;
+
+  /*Namesti Z indeks preko js*/
+  /* z-index: -5; */
 }
 #avatarPodaci {
   width: 20%;
@@ -47,16 +49,22 @@ aside {
   width: 100%;
   min-width: 150px;
 }
-#avatarPodaci p {
+#avatarPodaci p,
+#avatarPodaci a {
   padding-left: 10px;
   color: #fff;
 }
-#avatarPodaci p:first-child {
+#avatarPodaci p {
   margin-bottom: 15px;
 }
-#avatarPodaci p:nth-child(1n + 2) {
-  margin-top: 5px;
-  /* background-color: rosybrown; */
+.containerFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.wrapperInsights > img:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -123,7 +131,6 @@ aside {
     max-width: 100%;
     height: fit-content;
     padding-bottom: 60px;
-    z-index: -2;
   }
 
   #avatar {
@@ -138,10 +145,5 @@ aside {
     justify-content: left;
     align-items: center;
     font-size: 1.2rem;
-    gap: 20px;
-  }
-  #avatarPodaci p {
-    margin-left: -20px;
-    color: #fff;
   }
 }

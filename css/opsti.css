@@ -92,6 +92,7 @@ a:visited {
 
 a:hover {
   color: var(--zelena);
+  cursor: pointer;
 }
 
 a:active {
