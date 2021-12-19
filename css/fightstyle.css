@@ -53,27 +53,23 @@
   border-radius: 50%;
 }
 @media screen and (min-width: 1200px) {
-  /* #mainUvod {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
-
   #infoMT {
     float: left;
     width: 45%;
     margin-left: 5%;
     text-align: left;
     font-size: 2em;
-    max-width: 800px;
+    /* max-width: 800px; */
   }
-
+  #infoMT > h2 {
+    text-align: left !important;
+    padding: 0 2.5%;
+  }
   #mainUvod > img {
     float: inline-start;
     width: 45%;
     margin-right: 5%;
-    max-width: 800px;
+    /* max-width: 800px; */
   }
 
   #mainUvod h1 {
