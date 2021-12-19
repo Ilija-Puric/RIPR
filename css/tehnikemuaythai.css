@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.tablekontrola {
+  overflow-x: scroll;
+  width: 100%;
+  min-width: 500px;
+}
+table {
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* border-collapse: separate;
+  border-spacing: 25px;
+  width: 100%; */
+
+  /* table-layout: fixed; */
+  width: 100%;
+}
+
+tr > th {
+  font-size: 2rem;
+}
+td {
+  text-align: center;
+}
+td > img {
+  width: 300px;
+  /* height: 100%; */
+  height: 180px;
+}
+/* td > img {
+  width: 500px;
+
+  height: 350px;
+}
+*/
+@media screen and (min-width: 1520px) {
+  td > img {
+    width: 500px;
+    height: 300px;
+  }
+}
