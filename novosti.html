@@ -21,6 +21,56 @@
 
         #aside2>section>h2 {
             background-color: rgba(255, 255, 255, 0.712);
+
+        }
+
+        #sec2>h2 {
+
+            background-color: rgba(255, 255, 255, 0.712);
+            margin-top: 15px;
+            margin-bottom: 5px;
+            /* font-size: 1.4rem; */
+            /* width: fit-content; */
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: flex-start; */
+
+        }
+
+        table {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 15px;
+            text-align: left;
+            border: 2px solid black;
+            border-collapse: collapse;
+
+            /*   border-collapse: separate;
+                border-spacing: 15px; */
+        }
+
+        tr,
+        th,
+        td {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        th {
+            background-color: rgba(226, 144, 89, 0.637);
+
+        }
+
+        td,
+        th {
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ddddddaf;
         }
     </style>
 </head>
@@ -69,6 +119,34 @@
                 <li>Dustin Poirier <span class="downRank">&#9660;(2)</span></li>
                 <li>Justin Gaethje <span class="downRank">&#9660;(1)</span> </li>
                 </>
+        </section>
+
+        <section id="sec2">
+            <h2>Recenzije prethodnih događaja</h2>
+            <table>
+                <caption style="caption-side:bottom">Prosečne ocene prethodnih događaja</caption>
+                <tr>
+                    <th>Događaj</th>
+                    <th>Prosečna ocena</th>
+                </tr>
+                <tr>
+                    <td>UFC 268</td>
+                    <td>4.6</td>
+                </tr>
+                <tr>
+                    <td>Bellator 159</td>
+                    <td>3.9</td>
+                </tr>
+                <tr>
+                    <td>KSW 66</td>
+                    <td>4.1</td>
+                </tr>
+                <tr>
+                    <td>Glory 81</td>
+                    <td>4.4</td>
+                </tr>
+
+            </table>
         </section>
     </aside>
     <main>
