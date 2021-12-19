@@ -13,3 +13,70 @@
   font-weight: bold;
   /* font-family: Montserrat, sans-serif !important; */
 }
+
+.upRank {
+  color: rgb(31, 206, 75);
+}
+
+.downRank {
+  color: rgb(235, 70, 55);
+}
+
+#aside1 {
+  width: 100%;
+  text-align: center;
+}
+
+main > article {
+  text-align: center;
+  margin: 15px 0px;
+  /* font-size: 1rem; */
+}
+main > article > figure > img {
+  width: 100%;
+}
+
+em::before,
+em::after {
+  content: "'' ";
+}
+
+#aside2 > section > figure > img {
+  width: 100%;
+}
+#aside2 > section > figure {
+  margin: 15px 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  #aside1,
+  #aside2 {
+    float: left;
+    text-align: left;
+    margin-top: 15px;
+  }
+  #aside1 {
+    width: 18%;
+    margin-left: 2.5%;
+    /* margin-right: 2.5%; */
+    font-size: 1.1rem;
+
+    /* background-color: rgb(237, 241, 245); */
+    /* border-radius: 25px;
+    outline: 2px solid black; */
+  }
+  #aside2 {
+    width: 25%;
+    margin-left: 2.5%;
+    padding-right: 1.5%;
+    /* 
+    background-color: rgb(237, 241, 245); */
+  }
+
+  main {
+    width: 50%;
+    float: left;
+    overflow-y: scroll;
+    height: 90vh;
+  }
+}
