@@ -96,12 +96,12 @@ em::after {
     width: fit-content;
     margin-right: 50px;
   }
-  aside {
+  /* aside {
     display: flex;
-    justify-content: flex-start;
-  }
+    justify-content: flex-end;
+  } */
 
   table {
-    margin: 0px;
+    margin: 0px !important;
   }
 }

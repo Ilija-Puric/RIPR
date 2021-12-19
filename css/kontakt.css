@@ -1,0 +1,145 @@
+main {
+  /* position: relative; */
+  /* min-height: 100vh; */
+  /* z-index: 5; */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  background-color: rgb(204, 95, 52);
+  width: 100%;
+  text-align: center;
+  padding: 15px 0px;
+}
+form {
+  background-color: rgb(226, 228, 227);
+  box-shadow: rgba(211, 91, 22, 0.089) 10px 5px 50px 30px;
+  /* border: 2px solid black; */
+  /* position: absolute; */
+  margin-bottom: 20px;
+  width: 90%;
+  min-width: 400px;
+  text-align: left;
+  /* width: 90%;
+  min-width: 290px;
+  max-width: 750px;
+  height: 550px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* z-index: -2; */
+}
+div:nth-of-type(1) {
+  padding-top: 30px;
+  background-color: transparent;
+}
+
+form > div > label {
+  font-size: 1.5rem;
+}
+
+input[type="email"] {
+  /*Lepsi text-fieldovi sa bold*/
+  font-weight: bold;
+  width: 200px;
+  height: 30px;
+  background-color: rgb(226, 228, 227);
+  border: none;
+  border-bottom: 2px solid rgb(211, 91, 22);
+  outline: none;
+  font-size: 1.4rem;
+  transition: all 0.1s linear;
+}
+
+input[type="email"]:hover {
+  border-bottom: 3px solid rgb(211, 91, 22);
+  padding-left: 5px;
+  font-size: 1.7rem;
+}
+
+input[type="email"]:focus {
+  border: 3px solid rgb(211, 91, 22);
+  padding-left: 5px;
+  font-size: 1.7rem;
+  background-color: rgba(211, 91, 22, 0.137);
+}
+
+input[type="submit"] {
+  font-size: 1.1rem;
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid black;
+  transition: all 0.2s linear;
+}
+
+input[type="submit"]:hover {
+  border: 2px solid rgb(211, 91, 22);
+  color: rgb(211, 91, 22);
+  cursor: pointer;
+}
+#tabelaHeader {
+  font-size: 1.4rem;
+}
+/* table {
+  background-color: rgb(224, 234, 240);
+  transition: box-shadow 1s ease-in-out;
+}
+table:hover {
+  box-shadow: rgba(224, 234, 240, 0.13) 20px 20px 60px 20px;
+} */
+.lowZindex {
+  position: relative !important;
+  z-index: -2;
+}
+
+.highZindex {
+  position: relative;
+  z-index: 5;
+}
+.allIcons {
+  transition: color 0.3s linear;
+}
+
+.allIcons:hover {
+  color: #ac2a36 !important;
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    display: block;
+  }
+  form {
+    /* max-width: 850px; */
+    float: left;
+    width: 58%;
+    margin-left: 12.5%;
+    top: 20px;
+    max-width: 800px;
+    /* max-width: 900px; */
+  }
+  aside {
+    float: left;
+    width: 25%;
+    margin-left: 1.5%;
+    margin-right: 3%;
+    position: relative;
+  }
+  #tabelaHeader {
+    font-size: 1.7rem;
+  }
+  #linkdin {
+    /* font-size: 10rem; */
+    font-size: 8rem !important;
+  }
+  .ikonice {
+    font-size: 4rem;
+  }
+}
