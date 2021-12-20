@@ -69,6 +69,8 @@
     float: inline-start;
     width: 45%;
     height: 600px;
+    /*Jako lep efekat daje*/
+    object-fit: cover;
     margin-right: 5%;
     margin-top: 15px;
     /* max-width: 800px; */
