@@ -87,15 +87,15 @@ a {
 }
 
 a:link {
-  color: var(--narandzasta);
-}
-
-a:visited {
   color: var(--roze);
 }
 
+a:visited {
+  color: var(--narandzasta);
+}
+
 a:hover {
-  color: var(--zelena);
+  color: rgb(211, 91, 22);
   cursor: pointer;
 }
 

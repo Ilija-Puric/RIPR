@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prijava</title>
+  <title>Login</title>
   <meta name="author" content="Ilija Puric" />
   <meta name="keywords" content="Martial arts,MMA,Muay Thai, Judo, Kikboks, Savate, Karate," />
   <meta name="description"
@@ -39,7 +39,7 @@
             </li>
             <li><a class="aNav aNavBoth" href="novosti.html">Novosti</a></li>
             <li><a class="aNav aNavBoth" href="forum.html">Forum</a></li>
-            <li><a id="youAreHere" class="aNav " href="login.html">Prijava</a></li>
+            <li><a id="youAreHere" class="aNav " href="signup.html">Prijava</a></li>
             <li><a class="aNav aNavBoth" href="kontakt.html">Kontakt</a></li>
           </ul>
         </li>
@@ -51,26 +51,11 @@
     <!-- Dal je flow element? flow elemnt moze unutar forme -->
     <!-- <h1>Prijava</h1> -->
     <form>
-      <h1>Prijava</h1>
-      <div id="imeDiv">
-        <label for="ime">Ime:</label>
-        <br>
-        <input type="text" id="ime" name="ime">
-      </div>
-      <div id="prezimeDiv">
-        <label for="prezime">Prezime:</label>
-        <br>
-        <input type="text" id="prezime" name="prezime">
-      </div>
-      <div id="mailDiv">
+      <h1>Ulogujte se</h1>
+      <div style="padding-top: 60px;" id="mailDiv">
         <label for="mail">E-mail:</label>
         <br>
         <input type="email" id="mail" name="mail">
-      </div>
-      <div id="userDiv">
-        <label for="user">Korisničko ime:</label>
-        <br>
-        <input type="text" id="user" name="user">
       </div>
       <div id="passDiv">
         <label for="pass">Lozinka:</label>
@@ -78,9 +63,11 @@
         <input type="password" id="pass" name="pass">
       </div>
       <div id="btDiv">
-        <input type="submit" value="Registruj se!">
+        <input type="submit" value="Uloguj se!">
       </div>
-
+      <div style="padding-top: 15px;">
+        <p>Zaboravili ste imejl/lozinku? <br> <a href="#">Kliknite ovde</a></p>
+      </div>
     </form>
   </main>
 

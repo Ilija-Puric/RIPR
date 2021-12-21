@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prijava</title>
+    <meta name="author" content="Ilija Puric" />
+    <meta name="keywords" content="Martial arts,MMA,Muay Thai, Judo, Kikboks, Savate, Karate," />
+    <meta name="description"
+        content="Ovaj sajt je namenjen za sve ljubitelje borilačkih sportova, za one koje zanima
+    istorija razvoja veština i različitost kultura i njihov uticaj na njih. Upoznajte ljude različith mišljenja i delite iskustva. " />
+    <link rel="stylesheet" href="css/opsti.css" />
+    <link rel="stylesheet" href="css/pozadina.css">
+    <link rel="stylesheet" href="css/prijava.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+    </style>
+</head>
+
+<body class="noselect">
+    <header>
+        <nav>
+            <a href="main.html"><img id="logo" src="Slike/logoOrange.png" alt="slika logo-a" /></a>
+            <ul class="container">
+                <li>
+                    <ul class="hamburgerCeo">
+                        <li class="linija"></li>
+                        <li class="linija"></li>
+                        <li class="linija"></li>
+                    </ul>
+                </li>
+                <li class="wrapper">
+                    <ul class="navItems">
+                        <li><a class="aNav aNavBoth" href="about.html">O nama</a></li>
+                        <li>
+                            <a class="aNav aNavBoth" href="sportovi.html">Borilačke veštine</a>
+                        </li>
+                        <li><a class="aNav aNavBoth" href="novosti.html">Novosti</a></li>
+                        <li><a class="aNav aNavBoth" href="forum.html">Forum</a></li>
+                        <li><a id="youAreHere" class="aNav " href="signup.html">Prijava</a></li>
+                        <li><a class="aNav aNavBoth" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dal je flow element? flow elemnt moze unutar forme -->
+        <!-- <h1>Prijava</h1> -->
+        <form>
+            <h1>Prijava</h1>
+            <div id="imeDiv">
+                <label for="ime">Ime:</label>
+                <br>
+                <input type="text" id="ime" name="ime">
+            </div>
+            <div id="prezimeDiv">
+                <label for="prezime">Prezime:</label>
+                <br>
+                <input type="text" id="prezime" name="prezime">
+            </div>
+            <div id="mailDiv">
+                <label for="mail">E-mail:</label>
+                <br>
+                <input type="email" id="mail" name="mail">
+            </div>
+            <div id="userDiv">
+                <label for="user">Korisničko ime:</label>
+                <br>
+                <input type="text" id="user" name="user">
+            </div>
+            <div id="passDiv">
+                <label for="pass">Lozinka:</label>
+                <br>
+                <input type="password" id="pass" name="pass">
+            </div>
+            <div id="btDiv">
+                <input type="submit" value="Registruj se!">
+            </div>
+            <p style="padding-top:5px;">
+                Imate već nalog? <a id="loginLink" href="login.html">Ulogujte se</a>
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            <small>
+                &copy; Ilija Purić, projekat iz predmeta
+                <q>Razvoj internet poslovnih rešenja</q> 2021.godina</small>
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,11 +1,28 @@
 body {
-  background-image: url(../slike/pozadinaArts.png);
+  /* background-image: url(../slike/pozadinaArts.png); */
+  background-image: url(../slike/backgroundProjekatpng.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /*Top*/
   background-color: #6a7177;
   background-blend-mode: exclusion;
+  /* background-color: #d69936e3;
+  background-blend-mode: color-burn; */
+
+  /* background-color: #e28731f3; */
+
+  /* background-color: #ff6c09;
+  background-blend-mode: soft-light; */
+
   /* background-color: #6a7177;
-    background-blend-mode: luminosity; */
+  background-blend-mode: luminosity; */
 }
+
+/* form {
+  background-image: url(../slike/backgroundProjekatpng.png) !important;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-blend-mode: normal;
+  background-size: cover;
+} */

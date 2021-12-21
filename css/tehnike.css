@@ -67,9 +67,6 @@ figure > img {
   /* opacity: 0.9; */
 }
 
-.koristanInfo {
-  /* background-color: var(--tamnoSiva); */
-}
 .koristanInfo > section {
   display: flex;
   flex-direction: column;
@@ -80,10 +77,6 @@ figure > img {
   /* border-radius: 25px; */
 }
 
-body {
-  /* background-color: black; */
-}
-
 @media screen and (max-width: 600px) {
   figure > figcaption {
     font-size: 2rem;
@@ -91,8 +84,10 @@ body {
   }
   figure > img {
     /*Responzivna slika*/
+    /* width: 50vw;
+    height: 20vh; */
     width: 50vw;
-    height: 50vh;
+    height: 20vh;
     object-fit: cover;
     /* opacity: 0.9; */
   }
@@ -101,13 +96,12 @@ body {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0px;
-
-    /* background-color: rgba(12, 13, 14, 0.404); */
-
-    /* background-color: aliceblue; */
   }
   td {
     text-align: center;
     border: 0px;
+  }
+  figcaption {
+    /* display: none; */
   }
 }
