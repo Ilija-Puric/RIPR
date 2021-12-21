@@ -21,11 +21,12 @@ var page = path.split("/").pop();
 
 /*Zasad samo 2 stranice uzimam*/
 var profil;
-if (page == "forum.html") {
-  profil = document.getElementsByTagName("aside")[0];
-} else if (page == "login.html") {
-  profil = document.getElementsByTagName("main")[0];
-}
+
+// if (page == "forum.html") {
+//   profil = document.getElementsByTagName("aside")[0];
+// } else if (page == "login.html") {
+//   profil = document.getElementsByTagName("main")[0];
+// }
 
 dalJeFon(fon);
 fon.addListener(dalJeFon);
@@ -40,10 +41,10 @@ function dalJeFon(fon) {
     }
     trenutnaLokacija = "mobile";
 
-    if (profil != null) {
-      profil.classList.remove("lowZindex");
-      profil.classList.add("highZindex");
-    }
+    // if (profil != null) {
+    //   profil.classList.remove("lowZindex");
+    //   profil.classList.add("highZindex");
+    // }
   }
 }
 
@@ -61,10 +62,10 @@ function dalJeTablet(tablet) {
     footer[0].style.display = "block";
     trenutnaLokacija = "tablet";
 
-    if (profil != null) {
-      profil.classList.remove("lowZindex");
-      profil.classList.add("highZindex");
-    }
+    // if (profil != null) {
+    //   profil.classList.remove("lowZindex");
+    //   profil.classList.add("highZindex");
+    // }
   }
 }
 
@@ -84,10 +85,10 @@ function dalJePc(pc) {
     footer[0].style.display = "block";
     // profil.classList.toggle("lowZindex");
     trenutnaLokacija = "desktop";
-    if (profil != null) {
-      profil.classList.remove("lowZindex");
-      profil.classList.add("highZindex");
-    }
+    // if (profil != null) {
+    //   profil.classList.remove("lowZindex");
+    //   profil.classList.add("highZindex");
+    // }
   }
 }
 
@@ -98,10 +99,10 @@ hamburger.addEventListener("click", (e) => {
     stepen += 360;
 
     /*Ovo mogu na svaki main staviti da skratim posao sebi*/
-    if (profil != null) {
-      profil.classList.add("lowZindex");
-      profil.classList.remove("highZindex");
-    }
+    // if (profil != null) {
+    //   profil.classList.add("lowZindex");
+    //   profil.classList.remove("highZindex");
+    // }
 
     for (var i = 0; i < hamLinije.length; i++) {
       hamLinije[i].style.webkitTransform = "rotate(" + stepen + "deg)";
@@ -122,11 +123,11 @@ hamburger.addEventListener("click", (e) => {
     hamLinije[1].style.transition = "all 0.2s ease-out";
     liste.style.display = "none";
 
-    if (profil != null) {
-      // profil.classList.toggle("lowZindex");
-      profil.classList.add("highZindex");
-      profil.classList.remove("lowZindex");
-    }
+    // if (profil != null) {
+    //   // profil.classList.toggle("lowZindex");
+    //   profil.classList.add("highZindex");
+    //   profil.classList.remove("lowZindex");
+    // }
 
     footer[0].style.display = "block";
   }

@@ -59,6 +59,7 @@ header {
   position: -webkit-sticky;
   /* Safari */
   top: 0;
+  z-index: 10;
 }
 
 nav {

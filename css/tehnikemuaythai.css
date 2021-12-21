@@ -9,15 +9,7 @@ tr > th {
 }
 td {
   text-align: center;
-  /* border: 20px solid rgba(92, 90, 90, 0.534); */
-  border-radius: 10px;
-}
-
-td,
-th,
-tr {
-  /* border: 2px solid black; */
-  /* background-color: var(--tamnoSiva); */
+  border: 20px solid rgba(175, 175, 175, 0.185);
 }
 
 /*Jednake celije*/
@@ -33,20 +25,28 @@ table {
 
   margin: 0 auto;
   margin-bottom: 50px;
-  background-color: rgba(12, 13, 14, 0.404);
+  /* background-color: rgba(12, 13, 14, 0.404); */
   border-radius: 10px;
 
   /* background-color: aliceblue; */
 }
 
+td > a {
+  /* position: relative;
+  z-index: -1; */
+  filter: grayscale(0.9);
+  transition: filter 1s linear;
+}
+
+a:hover {
+  filter: grayscale(0.4);
+}
+
 figure {
-  /* margin: 0 auto; */
+  position: relative;
   width: 100%;
   text-align: center;
-  position: relative;
-
-  /* z-index: 0; */
-  z-index: -1;
+  /* z-index: -2; */
   /* background-color: black; */
 }
 
@@ -55,8 +55,6 @@ figure > figcaption {
   position: absolute;
   top: 10px;
   left: 20px;
-  z-index: 1;
-  /* color: rgba(255, 255, 255, 0.212); */
   color: rgba(255, 255, 255, 0.62);
 }
 
@@ -66,13 +64,7 @@ figure > img {
   height: 50vh;
   object-fit: cover;
   /* opacity: 0.9; */
-  filter: grayscale(0.9);
-  /* transition: filter 1s linear; */
 }
-/* 
-figure > img:hover {
-  filter: grayscale(0.3);
-} */
 
 .koristanInfo {
   /* background-color: var(--tamnoSiva); */
@@ -84,15 +76,36 @@ figure > img:hover {
   align-items: center;
   font-size: 1.5rem;
   background-color: rgba(12, 13, 14, 0.363);
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
-/* body {
-  background-color: black;
-} */
+body {
+  /* background-color: black; */
+}
 
 @media screen and (max-width: 600px) {
   figure > figcaption {
     font-size: 2rem;
+  }
+  figure > img {
+    /*Responzivna slika*/
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    /* opacity: 0.9; */
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+
+    /* background-color: rgba(12, 13, 14, 0.404); */
+
+    /* background-color: aliceblue; */
+  }
+  td {
+    text-align: center;
+    border: 0px;
   }
 }
