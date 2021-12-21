@@ -46,6 +46,7 @@ figure {
   position: relative;
   width: 100%;
   text-align: center;
+  box-shadow: #5a0a0ada 40px 50px 200px;
   /* z-index: -2; */
   /* background-color: black; */
 }
@@ -86,6 +87,7 @@ body {
 @media screen and (max-width: 600px) {
   figure > figcaption {
     font-size: 2rem;
+    left: 0px;
   }
   figure > img {
     /*Responzivna slika*/
