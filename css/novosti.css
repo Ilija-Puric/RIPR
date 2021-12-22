@@ -66,7 +66,7 @@ main > article {
   padding-bottom: 3%;
   /* font-size: 1rem; */
 }
-main > article > figure > img {
+main > article > a > figure > img {
   width: 100%;
 }
 
@@ -75,7 +75,7 @@ em::after {
   content: "'' ";
 }
 
-#aside2 > section > figure > img {
+#aside2 > section > a > figure > img {
   width: 100%;
 }
 #aside2 > section > figure {
@@ -97,6 +97,7 @@ em::after {
   margin: 0 auto;
   background-color: rgba(26, 23, 21, 0.288);
   padding: 0 3%;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -105,8 +106,13 @@ h1 {
   width: 91%;
   margin: 0 auto;
   background-color: rgba(199, 194, 194, 0.877);
+  background-color: rgba(224, 141, 32, 0.877);
   margin-top: 20px;
 }
+.naredniDogadjaji a {
+  color: #000000;
+}
+
 @media screen and (min-width: 1200px) {
   #aside1,
   #aside2 {
@@ -156,7 +162,6 @@ h1 {
     width: 91%;
 
     margin: 0 auto;
-    background-color: rgba(199, 194, 194, 0.877);
     top: 0px;
   }
 
