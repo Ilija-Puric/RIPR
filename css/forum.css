@@ -16,12 +16,16 @@ article {
 }
 article > img {
   margin-top: 10px;
-  width: 50%;
-  border-radius: 50%;
-  border: 10px outset;
+  width: 30%;
+  /* height: 200px; */
+  max-width: 250px;
+  min-width: 150px;
+  /* object-fit: cover; */
+  /* border-radius: 50%; */
+  border: 10px outset rgb(54, 54, 54);
   /* background-color: black; */
 }
-main > article:nth-child(1) > img {
+/* main > article:nth-child(1) > img {
   background-color: rgba(216, 142, 64, 0.392);
   border-color: rgba(216, 142, 64, 0.392);
 }
@@ -36,7 +40,7 @@ main > article:nth-child(3) > img {
 main > article:nth-child(4) > img {
   background-color: rgb(81, 150, 42);
   border-color: rgb(78, 138, 44);
-}
+} */
 
 .insight {
   display: flex;
@@ -70,7 +74,7 @@ aside {
   max-width: 250px;
   min-width: 150px;
   margin-right: 10%;
-  /* height: 100vh; */
+
   background-color: rgb(20, 20, 20);
 }
 #avatarPodaci {
@@ -153,7 +157,7 @@ article:hover {
     min-width: none;
     max-width: 100%;
     height: fit-content;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
   }
 
   #avatar {
