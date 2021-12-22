@@ -31,14 +31,14 @@ table {
   /* background-color: aliceblue; */
 }
 
-td > a {
+td {
   /* position: relative;
   z-index: -1; */
   filter: grayscale(0.9);
   transition: filter 1s linear;
 }
 
-a:hover {
+td:hover {
   filter: grayscale(0.4);
 }
 
