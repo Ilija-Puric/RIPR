@@ -1,5 +1,31 @@
 @import url(boje.css);
 
+h1 {
+  text-align: center;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.582);
+  /* border-bottom: 2px solid black; */
+}
+
+aside h2 {
+  /* background-color: rgba(255, 255, 255, 0.712); */
+  border-bottom: 2px solid black;
+  margin-bottom: 6px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#sec2 > h2 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+}
+
 .rankovi {
   list-style: none;
   counter-reset: mojBrojac;
@@ -28,15 +54,16 @@ aside {
 #aside1 {
   width: 100%;
 }
-#aside1 > section > h2 {
-  background-color: rgba(255, 255, 255, 0.712);
-  margin-bottom: 5px;
-  width: 100%;
-}
 
 main > article {
   text-align: center;
-  margin: 15px 0px;
+  /* margin: 15px 0px; */
+
+  width: 85%;
+  margin: 10px auto;
+  background-color: rgba(26, 23, 21, 0.288);
+  padding: 0px 3%;
+  padding-bottom: 3%;
   /* font-size: 1rem; */
 }
 main > article > figure > img {
@@ -55,7 +82,30 @@ em::after {
   margin: 15px 0px;
 }
 #aside2 > section > figure:last-child {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+#aside1 section {
+  width: 85%;
+  margin: 10px auto;
+  background-color: rgba(26, 23, 21, 0.288);
+  padding: 0 3%;
+}
+
+.naredniDogadjaji {
+  width: 85%;
+  margin: 0 auto;
+  background-color: rgba(26, 23, 21, 0.288);
+  padding: 0 3%;
+}
+
+h1 {
+  /*nije pozicionirao na osnovu bodija*/
+  position: static;
+  width: 91%;
+  margin: 0 auto;
+  background-color: rgba(199, 194, 194, 0.877);
+  margin-top: 20px;
 }
 @media screen and (min-width: 1200px) {
   #aside1,
@@ -78,8 +128,7 @@ em::after {
     width: 25%;
     margin-left: 2.5%;
     padding-right: 1.5%;
-    /* 
-      background-color: rgb(237, 241, 245); */
+    /* background-color: rgb(237, 241, 245); */
   }
 
   main {
@@ -88,20 +137,36 @@ em::after {
     overflow-y: scroll;
     height: 90vh;
   }
+
+  .naredniDogadjaji {
+    /* max-width: 340px; */
+  }
+
   #aside1 > section > h2 {
-    width: fit-content;
+    /* width: fit-content; */
   }
   #sec2 > h2 {
     font-size: 1.3rem;
-    width: fit-content;
-    margin-right: 50px;
   }
-  /* aside {
-    display: flex;
-    justify-content: flex-end;
-  } */
 
-  table {
-    margin: 0px !important;
+  h1 {
+    /*nije pozicionirao na osnovu bodija*/
+    position: sticky;
+    position: -webkit-sticky;
+    width: 91%;
+
+    margin: 0 auto;
+    background-color: rgba(199, 194, 194, 0.877);
+    top: 0px;
+  }
+
+  h1 + article {
+    margin-top: 0px;
+  }
+
+  aside h2 {
+    width: 100%;
+    margin: 10px 0px 5px 0px;
+    text-align: center;
   }
 }
