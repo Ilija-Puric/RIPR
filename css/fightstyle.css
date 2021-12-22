@@ -52,6 +52,23 @@
   height: 180px;
   border-radius: 50%;
 }
+
+#btTehnike {
+  border: 3px solid var(--bela);
+  background-color: transparent;
+  border-radius: 25px;
+  color: var(--bela);
+  font-weight: bold;
+  padding: 3px 15px;
+  font-size: 1.5rem;
+  transition: all 200ms ease-in-out;
+}
+#btTehnike:hover {
+  color: rgb(211, 91, 22);
+  border: 3px solid rgb(211, 91, 22);
+  /* box-shadow: chocolate 10px 10px 60px; */
+}
+
 @media screen and (min-width: 1200px) {
   #infoMT {
     float: left;

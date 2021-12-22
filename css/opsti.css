@@ -95,7 +95,7 @@ a:visited {
 }
 
 a:hover {
-  color: rgb(211, 91, 22);
+  color: var(--narandzastaTamna);
   cursor: pointer;
 }
 
@@ -172,22 +172,6 @@ button {
   color: var(--crna);
   padding: 5px 25px;
   font-size: 1.7rem;
-}
-
-#btTehnike {
-  border: 3px solid var(--bela);
-  background-color: transparent;
-  border-radius: 25px;
-  color: var(--bela);
-  font-weight: bold;
-  padding: 3px 15px;
-  font-size: 1.5rem;
-  transition: all 200ms ease-in-out;
-}
-#btTehnike:hover {
-  color: var(--narandzasta);
-  border: 3px solid var(--narandzasta);
-  /* box-shadow: chocolate 10px 10px 60px; */
 }
 
 .lowZindex {

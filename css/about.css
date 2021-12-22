@@ -1,18 +1,11 @@
 main {
   padding: 25px 0px;
 }
-
-#sec1,
 #sec2 {
   text-align: center;
-}
-.bushido {
-  height: fit-content;
+  padding-top: 20px;
 }
 
-li {
-  list-style-position: inside;
-}
 #mainSec {
   text-align: center;
   margin: 0 15%;
@@ -21,72 +14,86 @@ h1 {
   font-size: 3.7rem;
 }
 
-h1 + p {
-  font-size: 1.7rem;
-}
-
-.info {
-  padding: 15px 5px;
+h1 + p,
+h2 + p {
   font-size: 1.3rem;
-}
-#sec1,
-#sec2 {
-  padding-top: 35px;
 }
 
 h2 {
   font-size: 2.8rem;
 }
 
-h2 + ol {
-  font-size: 1.4rem;
-}
-#bushidoKod {
-  padding-top: 20px;
+#headerSec2 {
+  padding-top: 30px;
   letter-spacing: 0.15em;
   text-shadow: 1px 4px 5px rgba(10, 4, 2, 0.73);
 }
-.bushidoSekcija {
-  line-height: 2.6rem;
+
+#sec2 section img {
+  width: 40%;
+  /* background-color: rgba(206, 35, 35, 0.808);*/
+  background-color: rgba(15, 14, 14, 0.671);
+  border-radius: 22px 22px 0px 0px;
+  /* border-top: 5px solid black; */
+
+  margin-bottom: -10px;
+
+  max-width: 340px;
+  min-width: 200px;
+
+  box-shadow: rgba(206, 132, 35, 0.349) 10px 30px 120px 40px;
+  /* box-shadow: rgba(206, 132, 35, 0.808) 10px 30px 1200px 80px; */
 }
-.bushido {
-  margin-top: 20px;
+
+#sec2 > section > h3 {
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 0 10%;
+  margin-top: 40px;
 }
-dt {
-  font-size: 1.8rem;
-  text-shadow: 1px 4px 5px rgba(10, 4, 2, 0.33);
+
+#sec2 > section > p {
+  font-size: 1.4em;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  padding: 5px 0px;
+  background-color: rgba(196, 191, 191, 0.253);
+  border-top: 5px solid black;
+  max-width: 340px;
+  min-width: 200px;
 }
-dd {
-  font-size: 1.2rem;
-}
-figure > img {
-  width: 100%;
+#sec2 + div {
+  padding-top: 40px;
 }
 
 @media screen and (min-width: 1200px) {
-  #sec1 {
-    float: left;
-    width: 60%;
-  }
-  figure img {
-    /* width: 100%; */
-    margin: 0px 2%;
-    max-width: 1000px;
-
-    width: 50vw;
-    height: 50vh;
-    object-fit: cover;
-    /* min-width: 1000px; */
+  #sec2 section img {
+    width: 70%;
   }
 
-  #sec2 {
+  #secKontent1 {
+    margin-left: 2.5%;
     float: left;
-    width: 39%;
-    margin-left: 1%;
-    text-align: center;
-    max-width: 610px;
+    width: 30%;
   }
-  .bushidoSekcija {
-    line-height: 2.1rem;
+  #secKontent2 {
+    margin: 0 2.5%;
+    float: left;
+    width: 30%;
+  }
+  #secKontent3 {
+    margin-right: 2.5%;
+    float: left;
+    width: 30%;
+  }
+
+  #sec2 > section > p {
+    width: 70%;
+  }
+
+  h1 + p,
+  h2 + p {
+    font-size: 1.5em;
   }
 }
