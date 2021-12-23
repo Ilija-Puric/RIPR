@@ -15,14 +15,13 @@
         @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
 
         table {
-            /* border: 2px solid black; */
             text-align: center;
         }
 
         tr,
         td,
         th {
-            padding: 5px;
+            padding: 10px;
         }
 
         .ikonice {
@@ -62,75 +61,69 @@
     </header>
 
     <main>
-        <form>
-            <h1>Kontaktirajte nas!</h1>
-            <div id="mailDiv">
-                <label for="mail">E-mail:</label>
-                <br>
-                <input type="email" id="mail" name="mail">
-            </div>
 
-            <div class="kontaktDiv">
-                <label for="kontakt">Tema:</label>
-                <br>
-                <textarea id="kontakt" rows="15" cols="35" name="kontakt"> </textarea>
-            </div>
-            <div style="margin-bottom: 15px;" id="btDiv">
-                <input type="submit" value="Pošalji mail!">
-            </div>
-        </form>
-        <aside>
-            <table>
-                <tr>
-                    <th id="tabelaHeader" colspan="4">Drugi načini da nas kontaktirate</th>
-                </tr>
-                <tr>
-                    <td rowspan="3">
-                        <a href="https://www.linkedin.com/" target="_blank"><span style="display: none;">a</span>
-                            <i id="linkdin" style="font-size: 5rem;  color: rgb(207, 78, 26);"
-                                class="fab fa-linkedin-in allIcons"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="https://www.instagram.com/" target="_blank"><span style="display: none;">a</span> <i
-                                class="fab fa-instagram ikonice allIcons"></i></a>
-                    </td>
-                    <td>
+        <h1>Kontaktirajte nas!</h1>
+        <table>
+            <tr>
+                <th id="tabelaHeader" colspan="4">
+                    <p>Kako do nas?</p>
+                </th>
+            </tr>
 
-                        <a href="https://telegram.org/"><span style="display: none;">a</span><i
-                                class="fab fa-telegram-plane ikonice allIcons"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="https://www.whatsapp.com/" target="_blank"><span style="display: none;">a</span><i
-                                class="fab fa-whatsapp ikonice allIcons"></i></a>
-                    </td>
-                    <td>
-                        <a href="https://sr-rs.facebook.com/" target="_blank"><span style="display: none;">a</span><i
-                                class="fab fa-facebook-f ikonice allIcons"></i></a>
-                    </td>
-                </tr>
-                <tr>
+            <tr>
+                <td colspan="4"><i class="fas fa-map-signs nadjiteNas"></i></td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    <a href="https://www.linkedin.com/" target="_blank"><span style="display: none;">a</span>
+                        <i id="linkdin" style="font-size: 5rem;" class="fab fa-linkedin-in allIcons"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.instagram.com/" target="_blank"><span style="display: none;">a</span> <i
+                            class="fab fa-instagram ikonice allIcons"></i></a>
+                </td>
+                <td>
 
-                    <td style="font-size: 1.2rem;" colspan="3">
-                        <address style="text-align:left; padding-left: 60px; margin-bottom: 50px;">
-                            Lokacija: Novi Sad <br>
-                            Poštanski broj: <span style="text-decoration: underline;">+21000</span>
-                            <br>
-                            Telefon: <a href="tel:+069555333"
-                                style="text-decoration: underline; font-variant: normal; font-style:italic;">+
-                                069 555
-                                333</a>
-                            <br>
-                            <a href="mailto:ilijapuric20@gmail.com">Pošaljite mi direktan mail</a>
-                        </address>
-                    </td>
-                </tr>
-            </table>
-        </aside>
+                    <a href="https://telegram.org/"><span style="display: none;">a</span><i
+                            class="fab fa-telegram-plane ikonice allIcons"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.whatsapp.com/" target="_blank"><span style="display: none;">a</span><i
+                            class="fab fa-whatsapp ikonice allIcons"></i></a>
+                </td>
+                <td>
+                    <a href="https://sr-rs.facebook.com/" target="_blank"><span style="display: none;">a</span><i
+                            class="fab fa-facebook-f ikonice allIcons"></i></a>
+                </td>
+            </tr>
+            <tr>
+
+                <td style="font-size: 1.2rem;" colspan="3">
+                    <address id="lastCell">
+                        Lokacija: Novi Sad <br>
+                        Poštanski broj: <span style="text-decoration: underline;">+21000</span>
+                        <br>
+                        Telefon: <a href="tel:+069555333"
+                            style="text-decoration: underline; font-variant: normal; font-style:italic;">+
+                            069 555
+                            333</a>
+                        <br>
+                        <a href="mailto:ilijapuric20@gmail.com">Pošaljite mi direktan mail</a>
+                    </address>
+                </td>
+            <tr>
+                <td colspan="4">
+                    <p>Hvala Vam na saradnji!</p>
+                </td>
+            </tr>
+
+            </tr>
+        </table>
     </main>
 
     <footer style="clear: both;">

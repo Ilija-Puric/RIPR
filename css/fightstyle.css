@@ -51,18 +51,18 @@
 }
 
 #btTehnike {
-  border: 3px solid rgb(211, 91, 22);
+  border: 3px solid var(--roze);
   background-color: transparent;
   border-radius: 25px;
-  color: rgb(211, 91, 22);
+  color: var(--roze);
   font-weight: bold;
   padding: 3px 15px;
   font-size: 1.5rem;
   transition: all 200ms ease-in-out;
 }
 #btTehnike:hover {
-  color: rgb(238, 23, 15);
-  border: 3px solid rgb(238, 23, 15);
+  color: var(--narandzastaTamna);
+  border: 3px solid var(--narandzastaTamna);
   /* box-shadow: chocolate 10px 10px 60px; */
 }
 
