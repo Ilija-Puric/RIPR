@@ -1,14 +1,20 @@
 @import url(boje.css);
 
+body {
+  background-image: url(../slike/backgroundProjekatpng.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
 h1 {
   text-align: center;
   margin-top: 15px;
-  background-color: rgba(255, 255, 255, 0.582);
-  /* border-bottom: 2px solid black; */
+  background: linear-gradient(to right, #b6b8b9, #a0a09e);
 }
 
 aside h2 {
-  /* background-color: rgba(255, 255, 255, 0.712); */
   border-bottom: 2px solid black;
   margin-bottom: 6px;
   width: 50%;
@@ -23,7 +29,6 @@ aside h2 {
 aside {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
 }
 
 .rankovi {
@@ -37,11 +42,10 @@ aside {
   content: counter(mojBrojac) ". ";
   color: var(--crvena);
   font-weight: bold;
-  /* font-family: Montserrat, sans-serif !important; */
 }
 
 .upRank {
-  color: rgb(31, 206, 75);
+  color: rgb(8, 98, 5);
 }
 
 .downRank {
@@ -58,11 +62,8 @@ aside {
 main > article {
   text-align: center;
   /* margin: 15px 0px; */
-
   width: 85%;
   margin: 10px auto;
-  background-color: rgba(26, 23, 21, 0.288);
-  border: 13px outset #7d8080;
   padding: 0px 3%;
   padding-bottom: 3%;
   /* font-size: 1rem; */
@@ -86,21 +87,26 @@ em::after {
   padding-bottom: 10px;
 }
 
+#aside1 section,
+.naredniDogadjaji,
+main > article {
+  background: linear-gradient(to right, #b6b8b9, #a0a09e);
+  background: -webkit-linear-gradient(to right, #b6b8b9, #a0a09e);
+  border: 10px outset #7d8080;
+}
+
 #aside1 section {
   width: 85%;
   margin: 10px auto;
-  background-color: rgba(26, 23, 21, 0.288);
-  border: 13px outset #7d8080;
+  /* background-color: rgba(26, 23, 21, 0.288); */
   padding: 0 3%;
 }
 
 .naredniDogadjaji {
   width: 85%;
   margin: 0 auto;
-  background-color: rgba(26, 23, 21, 0.288);
   padding: 0 3%;
   padding-bottom: 50px;
-  border: 13px outset #7d8080;
 }
 
 h1 {
@@ -108,15 +114,13 @@ h1 {
   position: static;
   width: 93.5%;
   margin: 0 auto;
-  background-color: rgba(199, 194, 194, 0.877);
-  background-color: rgba(224, 141, 32, 0.938);
   margin-top: 20px;
 }
 .naredniDogadjaji a {
   color: #000000;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1220px) {
   #aside1,
   #aside2 {
     float: left;
@@ -126,10 +130,8 @@ h1 {
   #aside1 {
     width: 18%;
     margin-left: 2.5%;
-    /* margin-right: 2.5%; */
     font-size: 1.1rem;
 
-    /* background-color: rgb(237, 241, 245); */
     /* border-radius: 25px;
       outline: 2px solid black; */
   }
@@ -137,7 +139,6 @@ h1 {
     width: 25%;
     margin-left: 2.5%;
     padding-right: 1.5%;
-    /* background-color: rgb(237, 241, 245); */
   }
 
   main {
@@ -147,13 +148,6 @@ h1 {
     height: 90vh;
   }
 
-  .naredniDogadjaji {
-    /* max-width: 340px; */
-  }
-
-  #aside1 > section > h2 {
-    /* width: fit-content; */
-  }
   #sec2 > h2 {
     font-size: 1.3rem;
   }
@@ -169,7 +163,7 @@ h1 {
   }
 
   h1 + article {
-    margin-top: 0px;
+    margin-top: 10px;
   }
 
   aside h2 {
