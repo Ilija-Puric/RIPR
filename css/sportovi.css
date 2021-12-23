@@ -61,8 +61,6 @@ main a:hover {
   figcaption {
     top: 60px;
   }
-  footer {
-  }
 }
 
 @media screen and (min-width: 280px) and (max-width: 1200px) {
