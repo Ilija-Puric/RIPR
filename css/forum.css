@@ -111,6 +111,28 @@ article:hover {
   /* box-shadow: rgba(36, 34, 34, 0.349) 10px 2px 50px 100px; */
 }
 
+.slovo {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.712);
+  border: 10px outset rgb(54, 54, 54);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.slovo p {
+  font-size: 2.4rem;
+  position: relative;
+  font-weight: 800;
+  top: 20px;
+}
+
+article > div > div + p {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
 @media screen and (max-width: 1200px) {
   main {
     width: 70%;

@@ -1,12 +1,22 @@
 body {
   /* background-image: url(../slike/pozadinaArts.png); */
-  background-image: url(../slike/backgroundProjekatpng.png);
+
+  /*previse tamna*/
+  /* background-image: linear-gradient(to right, #777a7c, #7e7e7b),
+    url(../slike/backgroundProjekatpng.png); */
+
+  background-image: linear-gradient(to right, #b6b8b9, #a0a09e),
+    url(../slike/backgroundProjekatpng.png);
+  background-image: -webkit-linear-gradient(to right, #b6b8b9, #a0a09e),
+    url(../slike/backgroundProjekatpng.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /*Top*/
-  background-color: #6a7177;
-  background-blend-mode: exclusion;
+  /* background-color: #6a7177; */
+
+  background-blend-mode: screen;
+  /* background-blend-mode: screen; */
   /* background-color: #d69936e3;
   background-blend-mode: color-burn; */
 
