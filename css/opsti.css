@@ -42,6 +42,7 @@
 } */
 
 html {
+  /* min-height: 100vh; */
   scroll-behavior: smooth;
 }
 body {
@@ -52,6 +53,8 @@ body {
 header {
   position: sticky;
   position: -webkit-sticky;
+
+  /*position:fixed; width:100%;*/
   /* Safari */
   top: 0;
   z-index: 10;
@@ -142,7 +145,15 @@ a:active {
 }
 
 footer {
+  /*sticky
+  position:sticky;
+  position:-webskit-sticky;
+  top:0px;
+  i uklonis bottom:0px;
+
+  */
   position: fixed;
+  /* position: sticky; */
   z-index: 10;
 
   background-color: rgb(12, 12, 12);
