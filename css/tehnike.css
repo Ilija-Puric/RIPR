@@ -37,6 +37,9 @@ td {
   filter: grayscale(0.9);
   transition: filter 1s linear;
 }
+tr:last-child > td {
+  filter: grayscale(0);
+}
 
 td:hover {
   filter: grayscale(0.4);

@@ -145,26 +145,32 @@ a:active {
 }
 
 footer {
-  /*sticky
-  position:sticky;
-  position:-webskit-sticky;
-  top:0px;
-  i uklonis bottom:0px;
-
-  */
   position: fixed;
-  /* position: sticky; */
-  z-index: 10;
-
-  background-color: rgb(12, 12, 12);
-  color: var(--roze);
   bottom: 0px;
   left: 0;
   right: 0;
   width: 100%;
+  /* position: sticky; */
+  z-index: 10;
+  background-color: rgb(12, 12, 12);
+  color: var(--roze);
   height: 24px;
   text-align: center;
 }
+
+/* footer {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+
+  z-index: 10;
+
+  background-color: rgb(12, 12, 12);
+  color: var(--roze);
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+} */
 footer > p > small {
   font-size: 0.9rem;
 }
@@ -250,9 +256,9 @@ button {
     z-index: -1;
   }
 }
-
+/* 
 @media screen and (max-width: 450px) {
   footer {
     height: 44px;
   }
-}
+} */
