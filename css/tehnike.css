@@ -21,7 +21,7 @@ td {
 table {
   width: fit-content;
   border-collapse: separate;
-  border-spacing: 20px;
+  border-spacing: 5px;
 
   margin: 0 auto;
   margin-bottom: 50px;
@@ -83,12 +83,10 @@ figure > img {
 @media screen and (max-width: 600px) {
   figure > figcaption {
     font-size: 2rem;
-    left: 0px;
+    left: 5px;
   }
   figure > img {
     /*Responzivna slika*/
-    /* width: 50vw;
-    height: 20vh; */
     width: 50vw;
     height: 20vh;
     object-fit: cover;
@@ -103,5 +101,15 @@ figure > img {
   td {
     text-align: center;
     border: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  figure > img {
+    /*Responzivna slika*/
+    width: 47vw;
+    height: 20vh;
+    object-fit: cover;
+    /* opacity: 0.9; */
   }
 }
