@@ -1,6 +1,4 @@
 body {
-  /* background-image: url(../slike/pozadinaArts.png); */
-
   /*previse tamna*/
   /* background-image: linear-gradient(to right, #777a7c, #7e7e7b),
     url(../slike/backgroundProjekatpng.png); */
@@ -12,27 +10,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*Top*/
-  /* background-color: #6a7177; */
 
   background-blend-mode: screen;
-  /* background-blend-mode: screen; */
-  /* background-color: #d69936e3;
-  background-blend-mode: color-burn; */
-
-  /* background-color: #e28731f3; */
-
-  /* background-color: #ff6c09;
-  background-blend-mode: soft-light; */
-
-  /* background-color: #6a7177;
-  background-blend-mode: luminosity; */
 }
-
-/* form {
-  background-image: url(../slike/backgroundProjekatpng.png) !important;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-blend-mode: normal;
-  background-size: cover;
-} */

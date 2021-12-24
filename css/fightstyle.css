@@ -68,7 +68,6 @@ footer {
   border: 3px solid var(--narandzastaTamna);
   /* box-shadow: chocolate 10px 10px 60px; */
 }
-
 /* #mainUvod > img {
   box-shadow: rgba(223, 44, 38, 0.185) 20px 10px 90px;
 } */
@@ -125,9 +124,9 @@ footer {
   }
 
   /*Popravlja problem koji float ostavlja na svoje elemente*/
-  /* .clearfix:after {
+  .clearfix:after {
     content: "";
     display: table;
     clear: both;
-  } */
+  }
 }

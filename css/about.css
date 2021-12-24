@@ -31,9 +31,6 @@ h2 {
 
 #sec2 section img {
   width: 40%;
-  /* background-color: rgba(206, 35, 35, 0.808);*/
-  /* background-color: rgba(15, 14, 14, 0.671); */
-
   background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343a6, #000000eb);

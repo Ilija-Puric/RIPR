@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 .noselect {
@@ -22,24 +21,17 @@
   width: 0.4rem;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #5e6062;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-/* html {
-  height: 100%;
-  min-height: 100vh;
-} */
 
 html {
   /* min-height: 100vh; */
@@ -53,9 +45,8 @@ body {
 header {
   position: sticky;
   position: -webkit-sticky;
-
-  /*position:fixed; width:100%;*/
-  /* Safari */
+  /* position: fixed;
+  width: 100%; */
   top: 0;
   z-index: 10;
 }
@@ -128,10 +119,6 @@ a:active {
 .hamburgerCeo {
   display: none;
 }
-/* .wrapper {
-  position: relative;
-  z-index: 2;
-} */
 
 .navItems {
   display: flex;
@@ -141,7 +128,6 @@ a:active {
   list-style-type: none;
 
   position: relative;
-  /* z-index: 20; */
 }
 
 footer {
@@ -158,40 +144,17 @@ footer {
   text-align: center;
 }
 
-/* footer {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0px;
-
-  z-index: 10;
-
-  background-color: rgb(12, 12, 12);
-  color: var(--roze);
-  width: 100%;
-  height: fit-content;
-  text-align: center;
-} */
 footer > p > small {
   font-size: 0.9rem;
 }
 
 button {
-  border: 3px solid var(--crna);
+  border: 3px solid var(--crvena);
   background-color: transparent;
   border-radius: 25px;
-  color: var(--crna);
+  color: var(--crvena);
   padding: 5px 25px;
   font-size: 1.7rem;
-}
-
-.lowZindex {
-  position: relative !important;
-  z-index: -2;
-}
-
-.highZindex {
-  position: relative;
-  z-index: 5;
 }
 
 @media screen and (max-width: 1200px) {
@@ -210,14 +173,10 @@ button {
     margin-right: 15px;
     width: 30px;
   }
-  .container {
-    position: relative;
-  }
 
+  /*dropdown*/
   .navItems {
     flex-direction: column;
-    /* height: 400px;
-        overflow: scroll; */
     height: fit-content;
     padding: 30px 0px;
     position: absolute;
@@ -225,9 +184,7 @@ button {
     right: 0px;
     background-color: rgb(12, 12, 12);
 
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(192, 34, 34, 0.051) -10px 15px 40px 10px;
   }
   .aNav {
     font-size: 1.4rem;
@@ -244,7 +201,6 @@ button {
 @media screen and (max-width: 500px) {
   .navItems {
     width: 100vw;
-    overflow: auto;
     height: 100vh;
     padding: 0px;
 
@@ -252,13 +208,6 @@ button {
     align-items: center;
 
     /*Z index -1 kako bi nav bio vidljiv iako je 100vh dropdown*/
-    top: -7px;
     z-index: -1;
   }
 }
-/* 
-@media screen and (max-width: 450px) {
-  footer {
-    height: 44px;
-  }
-} */

@@ -25,15 +25,10 @@ table {
 
   margin: 0 auto;
   margin-bottom: 50px;
-  /* background-color: rgba(12, 13, 14, 0.404); */
   border-radius: 10px;
-
-  /* background-color: aliceblue; */
 }
 
 td {
-  /* position: relative;
-  z-index: -1; */
   filter: grayscale(0.9);
   transition: filter 1s linear;
 }
@@ -50,8 +45,6 @@ figure {
   width: 100%;
   text-align: center;
   box-shadow: #5a0a0ada 40px 50px 200px;
-  /* z-index: -2; */
-  /* background-color: black; */
 }
 
 figure > figcaption {
@@ -106,7 +99,6 @@ figure > img {
 
 @media screen and (max-width: 450px) {
   figure > img {
-    /*Responzivna slika*/
     width: 47vw;
     height: 20vh;
     object-fit: cover;

@@ -7,13 +7,6 @@ main {
 
   box-shadow: rgba(199, 31, 31, 0.089) 10px 5px 50px 30px;
   background-color: whitesmoke;
-  /* background-color: whitesmoke;
-  background-image: url(../slike/backgroundProjekatpng.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  background-blend-mode: darken; */
 }
 
 h1 {
@@ -25,10 +18,6 @@ h1 {
 h1,
 table {
   width: 100%;
-}
-
-form > div > label {
-  font-size: 1.5rem;
 }
 
 #tabelaHeader {
@@ -60,16 +49,9 @@ table {
 }
 
 @media screen and (min-width: 1200px) {
-  /* main {
-    display: block;
-    position: relative;
-    top: 150px;
-  } */
-
   main {
     width: 80%;
   }
-
   h1 {
     font-size: 2.4rem;
   }

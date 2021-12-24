@@ -2,8 +2,6 @@ const hamburger = document.querySelector(".hamburgerCeo");
 const liste = document.querySelector(".wrapper");
 const hamLinije = document.querySelectorAll(".linija");
 const footer = document.getElementsByTagName("footer");
-const html = document.documentElement;
-const body = document.getElementsByTagName("body")[0];
 
 const fon = window.matchMedia("screen and (max-width: 500px)");
 const tablet = window.matchMedia(
@@ -21,8 +19,6 @@ function dalJeFon(fon) {
     liste.style.display = "none";
     for (var i = 0; i < hamLinije.length; i++) {
       hamLinije[i].style.display = "block";
-      /*U slucaju povlacenja dok je selektovana lista sto
-          dovodi do promene ekrana i loseg aktiv stanja hamburgera*/
       hamLinije[i].style.width = "30px";
     }
     trenutnaLokacija = "mobile";
@@ -36,8 +32,6 @@ function dalJeTablet(tablet) {
     liste.style.display = "none";
     for (var i = 0; i < hamLinije.length; i++) {
       hamLinije[i].style.display = "block";
-      /*U slucaju povlacenja dok je selektovana lista sto
-                dovodi do promene ekrana i loseg aktiv stanja hamburgera*/
       hamLinije[i].style.width = "30px";
     }
     footer[0].style.display = "block";
@@ -49,17 +43,15 @@ dalJePc(pc);
 pc.addListener(dalJePc);
 function dalJePc(pc) {
   if (pc.matches) {
-    // If media query matches
     liste.style.display = "block";
     stepen = 0;
     for (var i = 0; i < hamLinije.length; i++) {
       hamLinije[i].style.display = "none";
-      /*Ovo radim kako mi se ne bi okretlo ko lud hamburger prilikom resize-a   */
+      /*Ovo radim kako mi se ne bi okretao hamburger prilikom resize-a   */
       hamLinije[i].style.webkitTransform = "rotate(" + stepen + "deg)";
       hamLinije[i].style.transition = "none";
     }
     footer[0].style.display = "block";
-    // profil.classList.toggle("lowZindex");
     trenutnaLokacija = "desktop";
   }
 }
